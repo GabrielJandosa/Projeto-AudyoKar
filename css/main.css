@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
 body {
     width: 100%;
     height: 100%;
@@ -33,18 +39,41 @@ body {
 
 .nav ul li {
     display: inline-block;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
 }
+
 
 .nav ul li a {
     text-decoration: none; /* Remove o sublinhado dos links */
     color: white;
     margin-left: 10px;
+    margin-right: 10px ;
+    position: relative;
+    
 }
 
-.nav ul li a:hover {
-    background-color: blue;
-    color: yellow;
-    transition: 2s;
+.nav ul li a::after{
+    
+    content: " ";
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(45deg, rgb(0, 0, 0),rgb(0, 0, 0));
+    position: absolute;
+    top: 20px;
+    left: 0;
+    transition: 0.5s;
+    border-radius: 10px;
+
+}
+
+.nav ul li a:hover::after{
+
+    width: 30px;
+
 }
 
 
