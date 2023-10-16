@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0; /* Removendo margem padrão do body */
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+}
+
+.cabecalho {
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.nav ul {
+    text-align: center;
+    background-color: red;
+    margin: 0; /* Removendo margem padrão do ul */
+    padding: 0; /* Removendo preenchimento padrão do ul */
+    height: 60px; /* Defina a altura desejada */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente os itens da lista */
+    align-items: center; /* Centraliza verticalmente os itens da lista */
+}
+
+.nav ul li {
+    display: inline-block;
+}
+
+.nav ul li a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: white;
+    margin-left: 10px;
+}
+
+.nav ul li a:hover {
+    background-color: blue;
+    color: yellow;
+    transition: 2s;
+}
+
+
+
+
+
