@@ -1,9 +1,11 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Share+Tech+Mono&display=swap');
 
 *{
     padding: 0;
     margin: 0;
-
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -13,14 +15,18 @@ body {
 }
 
 #logo {
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 40px;
+    position: absolute;
+}
+
+#header{
+    width: 100%;
+    height: 80px;
 }
 
 .cabecalho {
-    background-color: black;
-    width: 100%;
-    height: 100px;
+    
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
@@ -28,20 +34,19 @@ body {
 
 .nav ul {
     text-align: center;
-    background-color: red;
+    background-color: white;
     margin: 0; /* Removendo margem padrão do ul */
-    padding: 0; /* Removendo preenchimento padrão do ul */
-    height: 60px; /* Defina a altura desejada */
+    height: 40px; /* Defina a altura desejada */
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente os itens da lista */
+    justify-content: left; /* Centraliza horizontalmente os itens da lista */
     align-items: center; /* Centraliza verticalmente os itens da lista */
+    box-shadow: 0px 15px 15px grey;
 }
 
 .nav ul li {
     display: inline-block;
     height: 60px;
-    margin: 0;
-    padding: 0;
+    margin-left: 5px;
     display: flex;
     align-items: center;
 }
@@ -49,10 +54,12 @@ body {
 
 .nav ul li a {
     text-decoration: none; /* Remove o sublinhado dos links */
-    color: white;
+    color: black;
     margin-left: 10px;
     margin-right: 10px ;
     position: relative;
+    font-size: 14px;
+    font-style: italic;
     
 }
 
@@ -61,7 +68,7 @@ body {
     content: " ";
     width: 0px;
     height: 4px;
-    background-image: linear-gradient(45deg, rgb(0, 0, 0),rgb(0, 0, 0));
+    background-image: linear-gradient(45deg, rgb(255, 255, 255),rgb(248, 91, 91),red);
     position: absolute;
     top: 20px;
     left: 0;
@@ -76,7 +83,37 @@ body {
 
 }
 
+.w {
+    
+    position: relative;
+    width: 35px;
+    height: 35px;
+    margin-left: 625px;
+    margin-right: 5px;
+}
 
+.i{
+    
+    position: relative;
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+}
 
+.y{
+    
+    position: relative;
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+}
+
+.f{
+    
+    position: relative;
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+}
 
 
