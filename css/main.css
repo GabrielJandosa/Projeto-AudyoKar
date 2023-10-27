@@ -7,7 +7,7 @@
 }
 
 body {
-    
+    /*imagine um relogio para as direcoes*/
     width: 100%;
     height: 100%;
     margin: 0; /* Removendo margem padrão do body */
@@ -16,7 +16,7 @@ body {
 
 #logo {
     width: 160px;
-    height: 50px;
+    height: 55px;
     position: absolute;
 }
 
@@ -85,20 +85,19 @@ body {
 
 .redes-sociais{
     position: absolute;
-    top: 9.8%;
-    right: 2%;
+    top: 9vh; /*view port deixa responsivo a tela*/
+    right: 2vh;
 }
 
 .redes-sociais a {
     margin-right: 5px; /* Espaçamento entre os ícones */
-    display: inline-block; /* Garante que os ícones fiquem na mesma linha */
+    display: inline; /* Garante que os ícones fiquem na mesma linha */
 }
 
 .redes-sociais a img{
 
-    position: relative;
+    
     float: right;
-    display: inline;
     margin: 5px;
     padding: 0;
     
@@ -153,6 +152,7 @@ section.slider{
 }
 
 .slide-box{
+
     width: 25%;
     height: auto;
     position: relative;
@@ -229,11 +229,11 @@ section.slider{
     }
 
     .img-mobile{
-        display: block;
+        display:inline;
     }
 
     .nav-auto, .nav-manual{
         margin-top: 60%;
     }
-} /*importar coisas código para responsabilidade android*/
+} /*importar coisas código para responsibilidade android*/
 
