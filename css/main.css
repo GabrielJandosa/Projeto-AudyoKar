@@ -83,26 +83,6 @@ body {
 
 }
 
-.redes-sociais{
-    position: absolute;
-    top: 9vh; /*view port deixa responsivo a tela*/
-    right: 2vh;
-}
-
-.redes-sociais a {
-    margin-right: 5px; /* Espaçamento entre os ícones */
-    display: inline; /* Garante que os ícones fiquem na mesma linha */
-}
-
-.redes-sociais a img{
-
-    
-    float: right;
-    margin: 5px;
-    padding: 0;
-    
-}
-
 .w {
     
     width: 25px;
@@ -237,3 +217,40 @@ section.slider{
     }
 } /*importar coisas código para responsibilidade android*/
 
+.home1{
+    background-color: red;
+    width: 100%;
+    height: 90vh;
+}
+
+.home2{
+    background-color: white;
+    width: 100%;
+    height: 90vh;
+    margin-top: 2.8%;
+}
+
+/*.produtos{
+    background-color: black;
+    margin-top: 0vh;
+    margin-left: 40vh;
+    width: 20%;
+    height: 50vh;
+}
+*/
+.sociais{
+    background-color: black;
+    margin-top: 0vh;
+    margin-left: 100vh;
+    width: 20%;
+    height: 50vh;
+}
+
+/*.servicos{
+    background-color: black;
+    margin-top: ;
+    margin-left: 100vh;
+    width: 20%;
+    height: 50vh;
+}
+*/
