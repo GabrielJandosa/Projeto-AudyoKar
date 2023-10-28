@@ -7,7 +7,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	width: 100%;
 	height: 100%;
-	background-image: linear-gradient(90deg, rgb(46, 46, 46), rgb(63, 25, 25));
+
 }
 
 #logo {
@@ -32,6 +32,7 @@ header {
 	box-sizing: border-box;
 	border-bottom: solid #F00 1px;
 	width: 100%;
+	z-index: 1;
 }
 
 nav {
@@ -91,7 +92,10 @@ nav ul li a:hover::after{
 
 }
 
-
+.img-desktop{
+	border-radius: 20px;
+	box-shadow: 3px 3px 20px;
+}
 section.slider{
 	margin: 0;
 	width: 100%;
@@ -99,12 +103,14 @@ section.slider{
 	padding: 0 !important;
 	overflow: hidden;
 	margin-top: 30px;
+	
 }
 
 .slide-content{
 	width: 400%; /* define o tamanho para caber as imagens, aumentar caso tenha mais imagens*/
 	height: auto;
 	display: flex;
+	
 	
 }
 
@@ -115,7 +121,7 @@ section.slider{
 .slide-box{
 
 	width: 25%;
-	height: auto;
+	height: 45vh;
 	position: relative;
 	text-align: center;
 	transition: 1s;
@@ -186,10 +192,104 @@ section.slider{
 
 .home1 img{
 	width: 100%;
-	height: 80%;
+	height: 100%;
 	position: relative;
 	margin: 0;
 	z-index: -1;
+}
+.home2{
+	background-color: white;
+	width: 100%;
+	height: 80vh;
+	margin-top: 100px;
+}
+
+.quadrado{
+
+
+	width: 250px;
+	height: 350px;
+	margin: 35px;
+	border-radius: 45px;
+	border: solid rgb(255, 0, 0) 2px;
+	box-shadow: 3px 3px 20px;
+	
+
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+
+	}
+
+	.tiravermelha{
+		color: white;
+		background-color: red;
+
+		width: 100%;
+		height: 5vh;
+		
+		position: relative;
+		top: 18vh;
+
+		font-size: 10px;
+		justify-content: center;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+	
+	
+		
+	}
+
+	#falante:hover{
+		transform: scale(1.1);
+	}
+
+	#redes:hover{
+		transform: scale(1.1);
+	}
+
+	#servicos:hover{
+		transform: scale(1.1);
+	}
+
+	#projetos:hover{
+		transform: scale(1.1);
+	}
+
+
+#falante{
+	background-image: url(/assets/falante.png);
+	transition: transform 0.3s;
+}
+
+#redes{
+	background-image: url(/assets/redes.png);
+	transition: transform 0.3s;
+}
+
+#servicos{
+	background-image: url(/assets/serviços.png);
+	transition: transform 0.3s;
+}
+
+#projetos{
+	background-image: url(/assets/projetos.png);
+	transition: transform 0.3s;
+}
+
+.home3{
+	background-color: red;
+	width: 100%;
+	height: 70vh;
+}
+.rodape{
+	position: relative;
+	background-color: black;
+	width: 100%;
+	height: 20vh;
+	top: 68%;
 }
 
 @media screen and (max-width: 900px) {
@@ -204,5 +304,5 @@ section.slider{
 	.nav-auto, .nav-manual{
 			margin-top: 60%;
 	}
-} /*importar coisas código para responsibilidade android*/
-
+} 
+/*importar coisas código para responsibilidade android*/
