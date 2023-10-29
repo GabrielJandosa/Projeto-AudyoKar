@@ -262,21 +262,25 @@ section.slider{
 #falante{
 	background-image: url(/assets/falante.png);
 	transition: transform 0.3s;
+	cursor: pointer;
 }
 
 #redes{
 	background-image: url(/assets/redes.png);
 	transition: transform 0.3s;
+	cursor: pointer;
 }
 
 #servicos{
 	background-image: url(/assets/serviços.png);
 	transition: transform 0.3s;
+	cursor: pointer;
 }
 
 #projetos{
 	background-image: url(/assets/projetos.png);
 	transition: transform 0.3s;
+	cursor: pointer;
 }
 
 .home3{
