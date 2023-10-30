@@ -209,7 +209,7 @@ section.slider{
 	
 	width: 250px;
 	height: 350px;
-	margin: 35px 35px 35px 65px;
+	margin: 35px 35px 35px 35px;
 	border-radius: 45px;
 	border: solid rgb(255, 0, 0) 2px;
 	box-shadow: 3px 3px 20px;
@@ -262,25 +262,25 @@ section.slider{
 #falante{
 	background-image: url(/src/assets/falante.png);
 	transition: transform 0.3s;
-	cursor: pointer;
+	
 }
 
 #redes{
 	background-image: url(/src/assets/redes.png);
 	transition: transform 0.3s;
-	cursor: pointer;
+
 }
 
 #servicos{
 	background-image: url(/src/assets/serviços.png);
 	transition: transform 0.3s;
-	cursor: pointer;
+
 }
 
 #projetos{
 	background-image: url(/src/assets/projetos.png);
 	transition: transform 0.3s;
-	cursor: pointer;
+
 }
 
 .home3{
