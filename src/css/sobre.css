@@ -5,9 +5,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Montserrat', sans-serif;
-	width: 100%;
-	height: 100%;
-
+	background: linear-gradient(to right, #000000, #8d8d8d);
 }
 
 #logo {
@@ -91,14 +89,63 @@ nav ul li a:hover::after{
 	width: 30px;
 
 }
+/* aqui comeca a pagina sobre*/
 
-/* essa div esta apenas mostrando o fundo branco e dividindo navbar do rodape*/
-.fundobranco{
-    background-color: white;
-    width: 100%;
-    height: 100vh;
+.tamanho{
+
+	height: 544px;
+	width: 100%;
+	background-color: white;
+}
+.ednaldo img{
+	box-shadow: 3px 3px 20px;
+	border-right:solid rgb(255, 255, 255) 1px;
+	position: relative;
+	display: flex;
+	height: 500px;
+	width: 500px;
+	top: 100px;
+	transition: 0.5s;
 }
 
+.ednaldo img:hover{
+	transform: scale(1.1);
+}
+
+.texto p{
+	height: auto;
+	width: 100vh;
+	display: flex;
+	position: relative;
+	justify-content: right;
+	text-align: justify;
+	color: #000000;
+	bottom: 50vh;
+	left: 90vh;
+
+
+}
+.texto h1{
+	display: flex;
+	align-items: center;
+	position: relative;
+	justify-content: right;
+	text-align: right;
+	color: #000000;
+	bottom: 50vh;
+	right: 36vh;
+
+}
+
+.assinatura{
+	top: 54vh;
+	left: 122vh;
+	position: absolute;
+	width: 200px;
+	height: 200px;
+}
+
+/* aqui comeca o rodape*/
 #rodape{
 
     position: relative;
@@ -132,7 +179,7 @@ nav ul li a:hover::after{
     height: 80%;
     background: linear-gradient(to bottom, #000000, #302f2f, rgb(0, 0, 0)); 
 }
-p{
+.rodape p{
 	margin: 2px;
 	padding-left: 50px;
 }
