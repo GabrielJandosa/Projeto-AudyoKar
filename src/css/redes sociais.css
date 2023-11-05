@@ -103,38 +103,42 @@ nav ul li a:hover::after{
 .texto{
 
 	align-items: center;
-	text-align: left;
+	text-align: right;
 	justify-content: center;
 
 	float: left; /* posiciona a div para começar da esquerda possibilitando compilar as divs uma ao lado da outra */
 	display: inline-flex;
 	position: relative;
 	height: 100%;
-	width: 50%;
+	width: 40%;
+	overflow: hidden;
 
-	color: black;
-	font-size: 6vh;
+	background-color: black;
+	color: rgb(255, 255, 255);
+	font-size: 5vh;
+	
+	transform: translatex(-100%);
+	transition: transform 1s ease-in-out; /* Adicione uma transição para suavizar a animação */
 
 }
 
-.texto::before{
-	content: " ";
-	float: right;
-	position: absolute;
-	right: 20vh;
-	width: 6px; /* Largura da borda esquerda */
-    height: 40%;
-    background: linear-gradient(to bottom, #ffffff, #000000, rgb(255, 255, 255)); 
+.texto h1{
+	padding-left: 16vh;
+	padding-right: 16vh;
+	border: solid 3px red;
 }
 
 .redes{
-	left: 5vh;
+	left: 16vh;
 	float: left;
 	display: inline-flex;
 	position: relative;
 	
 	height: 50vh;
 	width: 50%;
+
+	transform: translatex(120%);
+	transition: transform 1s ease-in-out; /* Adicione uma transição para suavizar a animação */
 }
 .redes img{
 	
@@ -156,12 +160,15 @@ nav ul li a:hover::after{
 
 /* slider */
 .slider{
-
-	margin: 0;
+	
+	
 	padding: 0 !important;
 	overflow: hidden;
 	height: 50vh;
-	width: 50%;
+	width: 60%;
+
+	transform: translatex(120%);
+	transition: transform 1s ease-in-out; /* Adicione uma transição para suavizar a animação */
 }
 
 .img-desktop{
@@ -183,6 +190,7 @@ nav ul li a:hover::after{
 
 .slide-box{
 
+	
 	width: 25%;
 	height: 15vh;
 	position: relative;
@@ -196,8 +204,8 @@ nav ul li a:hover::after{
 
 .nav-manual, .nav-auto{
 	position: absolute;
-	width: 50%;
-	margin-top: 16%;
+	width: 95%;
+	margin-top: 31%;
 	display: flex;
 	justify-content: center;
 }
