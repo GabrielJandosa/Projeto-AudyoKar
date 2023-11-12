@@ -103,6 +103,11 @@ main {
 	height: 600vh;	
 }
 
+.fade-in {
+    transform: scale(0.4);
+    transition: transform 1.2s;
+}
+
 .TITU1 {
 	position: absolute;
 
@@ -208,11 +213,6 @@ main {
 	top: 30.5%;
 
 	background: linear-gradient(to right, #EEE, #000, #F00);
-}
-
-#img1, .fade-in {
-    transform: scale(0.4);
-    transition: transform 1.2s;
 }
 
 .produto1 {
