@@ -17,3 +17,17 @@ function proximaImg(){
 
         document.getElementById('radio'+cont).checked = true
 }
+
+
+const home3 = document.querySelector('.home3');
+
+window.addEventListener('scroll', () => {
+  const scrollX = window.scrollX;
+  const divTop = home3.getBoundingClientRect().top;
+
+  if (divTop < window.innerHeight) {
+    home3.style.transform = 'translateX(0)';
+  } else {
+    home3.style.transform = 'translateX (100%)';
+  }
+});

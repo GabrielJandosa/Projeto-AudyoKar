@@ -94,11 +94,174 @@ nav ul li a:hover::after{
 
 /* essa div esta apenas mostrando o fundo branco e dividindo navbar do rodape*/
 .fundobranco{
+	overflow: hidden;
     background-color: white;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
 }
 
+.texto{
+
+	align-items: center;
+	text-align: right;
+	justify-content: center;
+
+	float: left; /* posiciona a div para começar da esquerda possibilitando compilar as divs uma ao lado da outra */
+	display: inline-flex;
+	position: relative;
+	height: 100%;
+	width: 40%;
+	overflow: hidden;
+
+	background-color: black;
+	color: rgb(255, 255, 255);
+	font-size: 5vh;
+	
+	transform: translatex(-100%);
+	transition: transform 1s ease-in-out; /* Adicione uma transição para suavizar a animação */
+
+}
+
+.texto h1{
+	padding-left: 16vh;
+	padding-right: 16vh;
+	border: solid 3px red;
+}
+
+.redes{
+	left: 16vh;
+	float: left;
+	display: inline-flex;
+	position: relative;
+	
+	height: 50vh;
+	width: 50%;
+
+	transform: translatex(120%);
+	transition: transform 1s ease-in-out; /* Adicione uma transição para suavizar a animação */
+}
+.redes img{
+	
+	top: 20vh;
+	align-items: center;
+	justify-items: center;
+	display: flex;
+	position: relative;
+	
+	height: 150px;
+	width: 150px;
+}
+
+.redes img:hover{
+	opacity: 0.6;
+	transition: 0.5s;
+	transform: scale(1.1);
+}
+
+/* slider */
+.slider{
+	
+	
+	padding: 0 !important;
+	overflow: hidden;
+	height: 50vh;
+	width: 60%;
+
+	transform: translatex(120%);
+	transition: transform 1s ease-in-out; /* Adicione uma transição para suavizar a animação */
+}
+
+.img-desktop{
+
+	border-radius: 20px;
+	box-shadow: 3px 3px 20px;
+}
+
+.slide-content{
+	width: 400%; /* define o tamanho para caber as imagens, aumentar caso tenha mais imagens*/
+	display: flex;
+	
+	
+}
+
+.slide-content input, .img-mobile{
+	display: none;
+}
+
+.slide-box{
+
+	
+	width: 25%;
+	height: 15vh;
+	position: relative;
+	text-align: center;
+	transition: 1s;
+}
+
+.slide-box img{
+	width: 90%;
+}
+
+.nav-manual, .nav-auto{
+	position: absolute;
+	width: 95%;
+	margin-top: 31%;
+	display: flex;
+	justify-content: center;
+}
+
+.nav-manual .manual-btn, .nav-auto div{
+	border: 1px solid red;
+	padding: 10px;
+	border-radius: 50%;
+	cursor:pointer;
+	transition: 0.2s;
+	
+}
+
+.nav-manual .manual-btn:not(:last-child),.nav-auto div:not(:last-child){
+
+	margin-right: 10px;
+}
+
+.nav-manual .manual-btn:hover{
+	background-color: red;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1{
+
+	background-color: red;
+}
+
+#radio2:checked ~ .nav-auto .auto-btn2{
+
+	background-color: red;
+}
+
+#radio3:checked ~ .nav-auto .auto-btn3{
+
+	background-color: red;
+}
+
+#radio1:checked ~ .primeiro{
+
+	margin-left: 0%;
+
+}
+
+#radio2:checked ~ .primeiro{
+
+	margin-left: -25%;
+	
+}
+
+#radio3:checked ~ .primeiro{
+
+	margin-left: -50%;
+	
+}
+
+/* começo do rodape */
 #rodape{
 
     position: relative;

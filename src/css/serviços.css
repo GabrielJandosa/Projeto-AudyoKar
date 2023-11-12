@@ -7,6 +7,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	width: 100%;
 	height: 100%;
+	overflow: hidden;
 
 }
 
@@ -93,13 +94,137 @@ nav ul li a:hover::after{
 }
 
 /* essa div esta apenas mostrando o fundo branco e dividindo navbar do rodape*/
+
+.cabeca{
+	width: 100%;
+	height: 100px;
+	bottom: 0;
+	top: 0	;
+}
 .fundobranco{
     background-color: white;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
+	overflow: hidden;
 }
 
-#rodape{
+.circulo{
+	top: 5vh;
+	align-items: center;
+	margin: 20px 20px 20px 20px;
+	width: 200px;
+	height: 200px;
+	display: inline-flex;
+	position: relative;
+	border: solid red 2px;
+	border-radius: 100px;
+}
+
+.circulo h1{
+	position: absolute;
+	color: rgb(255, 255, 255);
+	margin: 0;
+	font-size: 25px;
+	border-right: solid 2px rgb(218, 45, 45);
+	border-left: none;
+	padding: 2%;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+	background-color: black;
+
+}
+
+#som{
+	background-image: url(../serviços/som.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+/* #som h1{
+	top: 29vh;
+	left: 10vh;
+} */
+
+
+#alarme{
+	background-image: url(../serviços/alarme.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+
+#sufilme{
+	background-image: url(../serviços/insufilm.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#acessorios{
+	background-image: url(../serviços/acessorios.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#interior{
+	background-image: url(../serviços/tapecaria.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#iluminação{
+	background-image: url(../serviços/iluminacao.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.circulo:hover{
+	transition: 0.3s;
+	transform: scale(1.1);
+	opacity: 0.9;
+	box-shadow: 3px 3px 20px red;
+	
+}
+
+
+.servicos{
+	top: 14vh;
+	right: 0;
+
+	position: absolute;
+	width: 40%;
+	height: 90vh;	
+		
+	background-color: black;
+	box-shadow: 3px 3px 20px 3px;
+	
+	transform: translatex(100%);
+	transition: transform 1s ease-in-out; /* Adicione uma transição para suavizar a animação */
+}
+
+.servicos h1{
+
+	top: 30% ;
+	align-items: center;
+	text-align: right;
+	justify-content: center;
+	position: relative;
+	display: flex;
+
+	border-radius: 3px;
+	border: solid red 3px;
+	font-size: 60px;
+	color: white;
+}
+
+#rodape{	
 
     position: relative;
     bottom: 0;

@@ -287,6 +287,10 @@ section.slider{
 
 }
 
+section.homezada{
+	overflow: hidden;
+	background-color: black;
+}
 .home3{
 	background-image: url(/src/assets/PARCERIAS.png);
 	background-repeat: no-repeat;
@@ -296,9 +300,13 @@ section.slider{
 	width: 100%;
 	height: 80vh;
 
+	overflow: hidden;
 	position: relative;
-	
+	transform: translatex(100%);
+	transition: transform 1s ease-in-out; /* Adicione uma transição para suavizar a animação */
 }
+
+
 
 /* a partida daqui o codigo eh do rodape*/
 #rodape{
