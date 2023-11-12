@@ -7,7 +7,6 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	width: 100%;
 	height: 100%;
-
 }
 
 #logo {
@@ -93,10 +92,878 @@ nav ul li a:hover::after{
 }
 
 /* essa div esta apenas mostrando o fundo branco e dividindo navbar do rodape*/
-.fundobranco{
-    background-color: white;
-    width: 100%;
-    height: 100vh;
+main {    
+	width: 66%;
+    height: 600vh;
+
+	background-color: #FFFFFF;
+}
+
+.fundo {
+	height: 600vh;	
+}
+
+.TITU1 {
+	position: absolute;
+
+	top: 12%;
+	left: 32%;
+
+	font: normal bold 5vh 'Montserrat', sans-serif;
+}
+
+.TITU1b {
+	position: relative;
+
+	width: 65vh;
+	height: 0.5vh;
+
+	left: 68vh;
+	top: 3.7%;
+
+	background: linear-gradient(to right, #DDD, #000, #F00);
+}
+
+.TITU2 {
+	position: absolute;
+
+	top: 128vh;
+	left: 32%;
+
+	font: normal bold 5vh 'Montserrat', sans-serif;
+}
+
+.TITU2b {
+	position: relative;
+
+	width: 78vh;
+	height: 0.5vh;
+
+	left: 68vh;
+	top: 6%;
+
+	background: linear-gradient(to right, #EEE, #000, #F00);
+}
+
+.TITU3 {
+	position: absolute;
+
+	top: 243vh;
+	left: 40%;
+
+	font: normal bold 5vh 'Montserrat', sans-serif;
+}
+
+.TITU3b {
+	position: relative;
+
+	width: 32vh;
+	height: 0.5vh;
+
+	left: 84.5vh;
+	top: 14.4%;
+
+	background: linear-gradient(to right, #EEE, #000, #F00);
+}
+
+.TITU4 {
+	position: absolute;
+
+	top: 353vh;
+	left: 40%;
+	
+	font: normal bold 5vh 'Montserrat', sans-serif;
+}
+
+.TITU4b {
+	position: relative;
+
+	width: 29.4vh;
+	height: 0.5vh;
+
+	left: 85vh;
+	top: 22.4%;
+
+	background: linear-gradient(to right, #EEE, #000, #F00);
+}
+
+.TITU5 {
+	position: relative;
+
+	top: 188vh;
+	left: 60.6%;
+	
+	margin-right: 120vh;
+
+	font: normal bold 5vh 'Montserrat', sans-serif;
+}
+
+.TITU5b {
+	position: relative;
+
+	width: 17.2vh;
+	height: 0.5vh;
+
+	left: 84.7vh;
+	top: 30.5%;
+
+	background: linear-gradient(to right, #EEE, #000, #F00);
+}
+
+#img1, .fade-in {
+    transform: scale(0.4);
+    transition: transform 1.2s;
+}
+
+.produto1 {
+	position: relative;
+
+	cursor: default;
+
+	border-radius: 10%;
+	box-shadow: 0.5vh 0.5vh 1.4vh 0.6vh;
+	
+	top: 4%;
+	left: 8vh;
+
+	height: 30vh;
+	width: 38%;
+}
+
+#img1 {
+	background-image: url(../assets/MCP/Modulo1.jpg);
+	
+	background-size: cover;
+	background-position: center;
+}
+
+.produto2 {
+	position: absolute;
+
+	cursor: default;
+	
+	border-radius: 10%;
+	box-shadow: -0.5vh 0.5vh 1.4vh 0.6vh;
+
+	top: 62vh;
+	right: 8vh;
+
+	height: 30vh;
+	width: 25%;
+}
+
+#img2 {
+	background-image: url(../assets/MCP/Módulo2.jpg);
+
+	background-size: cover;
+	background-position: center;
+}
+
+.produto3 {
+	position: absolute;
+
+	cursor: default;
+
+	border-radius: 10%;
+	box-shadow: 0.5vh 0.5vh 1.4vh 0.6vh;
+	
+	top: 100vh;
+	left: 8vh;
+
+	height: 30vh;
+	width: 25%;
+}
+
+#img3 {
+	background-image: url(../assets/MCP/Modulo3.jpg);
+
+	background-size: cover;
+	background-position: center;
+}
+
+.produto4 {
+	position: absolute;
+
+	cursor: default;
+
+	border-radius: 10%;
+	box-shadow: 0.5vh 0.5vh 1.4vh 0.6vh;
+	
+	top: 141vh;
+	left: 8vh;
+
+	height: 30vh;
+	width: 25%;
+}
+
+#img4 {
+	background-image: url(../assets/MCP/Processador1.png);
+
+	background-size: cover;
+	background-position: center;
+}
+
+.produto5 {
+	position: absolute;
+
+	cursor: default;
+
+	border-radius: 10%;
+	box-shadow: -0.5vh 0.5vh 1.4vh 0.6vh;
+	
+	top: 178vh;
+	right: 8vh;
+
+	height: 30vh;
+	width: 25%;
+}
+
+#img5 {
+	background-image: url(../assets/MCP/Processador2.png);
+
+	background-size: cover;
+	background-position: center;
+}
+
+.produto6 {
+	position: absolute;
+
+	cursor: default;
+
+	border-radius: 10%;
+	box-shadow: 0.5vh 0.5vh 1.4vh 0.6vh;
+	
+	top: 215vh;
+	left: 8vh;
+
+	height: 30vh;
+	width: 25%;
+}
+
+#img6 {
+	background-image: url(../assets/MCP/Processador3.png);
+
+	background-size: cover;
+	background-position: center;
+}
+
+.produto7 {
+	position: absolute;
+
+	cursor: default;
+
+	border-radius: 10%;
+	box-shadow: 0.5vh 0.5vh 1.4vh 0.6vh;
+	
+	top: 256vh;
+	left: 8vh;
+
+	height: 30vh;
+	width: 25%;
+}
+
+#img7 {
+	background-image: url(../assets/MCP/AutoFalante\ DuasVias.png);
+
+	background-size: cover;
+	background-position: center;
+}
+
+.produto8 {
+	position: absolute;
+
+	cursor: default;
+
+	border-radius: 10%;
+	box-shadow: -0.5vh 0.5vh 1.4vh 0.6vh;
+	
+	top: 293vh;
+	right: 8vh;
+
+	height: 30vh;
+	width: 25%;
+}
+
+#img8 {
+	background-image: url(../assets/MCP/AutoFalante6x9.png);
+
+	background-size: cover;
+	background-position: center;
+}
+
+.produto9 {
+	position: absolute;
+
+	cursor: default;
+
+	border-radius: 10%;
+	box-shadow: 0.5vh 0.5vh 1.4vh 0.6vh;
+	
+	top: 325vh;
+	left: 8vh;
+
+	height: 30vh;
+	width: 25%;
+}
+
+#img9 {
+	background-image: url(../assets/MCP/AutoFalanteTriaxial.png);
+
+	background-size: cover;
+	background-position: center;
+}
+
+.produto10 {
+	position: absolute;
+
+	cursor: default;
+
+	border-radius: 10%;
+	box-shadow: 0.5vh 0.5vh 1.4vh 0.6vh;
+	
+	top: 366vh;
+	left: 8vh;
+
+	height: 30vh;
+	width: 25%;
+}
+
+#img10 {
+	background-image: url(../assets/MCP/Subwoofers1.png);
+
+	background-size: cover;
+	background-position: center;
+}
+
+.produto11 {
+	position: absolute;
+
+	cursor: default;
+
+	border-radius: 10%;
+	box-shadow: -0.5vh 0.5vh 1.4vh 0.6vh;
+	
+	top: 404vh;
+	right: 8vh;
+
+	height: 30vh;
+	width: 25%;
+}
+
+#img11 {
+	background-image: url(../assets/MCP/Subwoofers2.png);
+
+	background-size: cover;
+	background-position: center;
+}
+
+.produto12 {
+	position: absolute;
+
+	cursor: default;
+
+	border-radius: 10%;
+	box-shadow: 0.5vh 0.5vh 1.4vh 0.6vh;
+	
+	top: 442vh;
+	left: 8vh;
+
+	height: 30vh;
+	width: 25%;
+}
+
+#img12 {
+	background-image: url(../assets/MCP/Subwoofers3.png);
+
+	background-size: cover;
+	background-position: center;
+}
+
+.produto13 {
+	position: absolute;
+
+	cursor: default;
+
+	border-radius: 10%;
+	box-shadow: 0.5vh 0.5vh 1.4vh 0.6vh;
+	
+	top: 486.2vh;
+	left: 8vh;
+
+	height: 30vh;
+	width: 25%;
+}
+
+#img13 {
+	background-image: url(../assets/MCP/radio1.png);
+
+	background-size: cover;
+	background-position: center;
+}
+
+.produto14 {
+	position: absolute;
+
+	cursor: default;
+
+	border-radius: 10%;
+	box-shadow: -0.5vh 0.5vh 1.4vh 0.6vh;
+	
+	top: 525vh;
+	right: 8vh;
+
+	height: 30vh;
+	width: 25%;
+}
+
+#img14 {
+	background-image: url(../assets/MCP/radio2.png);
+
+	background-size: cover;
+	background-position: center;
+}
+
+.produto15 {
+	position: absolute;
+
+	cursor: default;
+
+	border-radius: 10%;
+	box-shadow: 0.5vh 0.5vh 1.4vh 0.6vh;
+	
+	top: 561.4vh;
+	left: 8vh;
+
+	height: 30vh;
+	width: 25%;
+}
+
+#img15 {
+	background-image: url(../assets/MCP/radio3.png);
+
+	background-size: cover;
+	background-position: center;
+}
+
+.sub1 {
+	position: relative;
+
+	cursor: default;
+
+	top: -7.6vh;
+	left: 70.2vh;
+}
+
+.texto1 {
+	position: relative;
+	
+	cursor: default;
+	
+	width: 100%;
+	
+	top: -8.8vh;
+	left: 63vh;
+}
+
+.linhap1 {
+	background-color: #F00;
+
+	position: relative;
+
+	width: 100%;
+	height: 0.6vh;
+		
+	position: relative;
+	top: 0.6vh;
+	left: 70.7vh;
+}
+
+.sub2 {
+	position: relative;
+
+	top: 5.8vh;
+	left: 2vh;
+}
+
+.texto2 {
+	position: relative;
+
+	top: 5vh;
+	right: 5vh;
+}
+
+.linhap2 {
+	background-color: #F00;
+
+	width: 100%;
+	height: 0.6vh;
+		
+	position: relative;
+
+	top: 14.4vh;
+	left: 2.5vh;
+}
+
+.sub3 {
+	position: relative;
+
+	cursor: default;
+
+	top: 19.5vh;
+	left: 70.2vh;
+}
+
+.texto3 {
+	position: relative;
+	
+	cursor: default;
+	
+	width: 100%;
+	
+	top: 19.3vh;
+	left: 63vh;
+}
+
+.linhap3 {
+	background-color: #F00;
+
+	position: relative;
+
+	cursor: default;
+
+	width: 100%;
+	height: 0.6vh;
+		
+	position: relative;
+	top: 27.5vh;
+	left: 70.5vh;
+}
+
+.sub4 {
+	position: relative;
+
+	top: 37vh;
+	left: 70vh;
+}
+
+.texto4 {
+	position: relative;
+	
+	width: 100%;
+	
+	top: 37vh;
+	left: 63vh;
+}
+
+.linhap4 {
+	background-color: #F00;
+
+	position: relative;
+
+	width: 100%;
+	height: 0.6vh;
+		
+	top: 45vh;
+	left: 70.3vh;
+}
+
+.sub5 {
+	position: relative;
+
+	top: 51.4vh;
+	left: 2vh;
+}
+
+.texto5 {
+	position: relative;
+
+	top: 51.4vh;
+	right: 5vh;
+}
+
+.linhap5 {
+	background-color: #f00;
+
+	position: relative;
+
+	width: 100%;
+	height: 0.6vh;
+		
+	top: 59.4vh;
+	left: 2vh;
+}
+
+.sub6 {
+	position: relative;
+
+	top: 63vh;
+	left: 70.2vh;
+}
+
+.texto6 {
+	position: relative;
+	
+	width: 100%;
+
+	top: 62.6vh;
+	left: 63vh;
+}
+
+.linhap6 {
+	background-color: #F00;
+
+	position: relative;
+
+	width: 100%;
+	height: 0.6vh;
+
+	top: 71vh;
+	left: 70.5vh;
+}
+
+.sub7 {
+	position: relative;
+
+	top: 88.2vh;
+	left: 70.2vh;
+}
+
+.texto7 {
+	position: relative;
+	
+	width: 100%;
+	
+	top: 87.7vh;
+	left: 63vh;
+}
+
+.linhap7 {
+	background-color: #F00;
+
+	position: relative;
+
+	width: 100%;
+	height: 0.6vh;
+		
+	top: 96.2vh;
+	left: 70.5vh;
+}
+
+.sub8 {
+	position: relative;
+
+	top: 105vh;
+	left: 2vh;
+}
+
+.texto8 {
+	position: relative;
+
+	top: 104.5vh;
+	right: 5vh;
+}
+
+.linhap8 {
+	background-color: #F00;
+
+	position: relative;
+
+	width: 100%;
+	height: 0.6vh;
+		
+	top: 113vh;
+	left: 2vh;
+}
+
+.sub9 {
+	position: relative;
+
+	top: 116vh;
+	left: 70.2vh;
+}
+
+.texto9 {
+	position: relative;
+	
+	width: 100%;
+	
+	top: 115vh;
+	left: 63vh;
+}
+
+.linhap9 {
+	background-color: #F00;
+
+	position: relative;
+
+	width: 100%;
+	height: 0.6vh;
+		
+	top: 124vh;
+	left: 70.5vh;
+}
+
+.sub10{
+	position: relative;
+
+	top: 137.4vh;
+	left: 70.2vh;
+}
+
+.texto10 {
+	position: relative;
+	
+	width: 100%;
+	
+	top: 137.5vh;
+	left: 63vh;
+}
+.linhap10 {
+	background-color: #F00;
+
+	position: relative;
+
+	width: 100%;
+	height: 0.6vh;
+	
+	top: 145.5vh;
+	left: 70.5vh;
+}
+
+.sub11 {
+	position: relative;
+
+	top: 158.5vh;
+	left: 2vh;
+}
+
+.texto11 {
+	position: relative;
+
+	top: 158vh;
+	right: 5vh;
+}
+
+.linhap11 {
+	background-color: #F00;
+
+	position: relative;
+
+	width: 100%;
+	height: 0.6vh;
+		
+	top: 166.5vh;
+	left: 2vh;
+}
+
+.sub12 {
+	position: relative;
+
+	top: 178vh;
+	left: 70.2vh;
+}
+
+.texto12 {
+	position: relative;
+	
+	width: 100%;
+	
+	top: 177.5vh;
+	left: 63vh;
+}
+
+.linhap12 {
+	background-color: #F00;
+
+	position: relative;
+
+	width: 100%;
+	height: 0.6vh;
+		
+	top: 186vh;
+	left: 70.5vh;
+}
+
+.sub13 {
+	position: relative;
+
+	top: 188vh;
+	left: 70.2vh;
+}
+
+.texto13 {
+	position: relative;
+	
+	width: 100%;
+	
+	top: 187.6vh;
+	left: 63vh;
+}
+
+.linhap13 {
+	background-color: #F00;
+
+	position: relative;
+
+	width: 100%;
+	height: 0.6vh;
+		
+	top: 196vh;
+	left: 70.5vh;
+}
+
+.sub14 {
+	position: relative;
+
+	top: 208vh;
+	left: 2vh;
+}
+
+.texto14 {
+	position: relative;
+
+	top: 207.5vh;
+	right: 5vh;
+}
+
+.linhap14 {
+	background-color: #F00;
+
+	position: relative;
+
+	width: 100%;
+	height: 0.6vh;
+		
+	top: 216vh;
+	left: 2vh;
+}
+
+.sub15 {
+	position: relative;
+
+	top: 225.4vh;
+	left: 70.2vh;
+}
+
+.texto15 {
+	position: relative;
+	
+	width: 100%;
+	
+	top: 225.4vh;
+	left: 63vh;
+}
+
+.linhap15 {
+	background-color: #F00;
+
+	position: relative;
+
+	width: 100%;
+	height: 0.6vh;
+		
+	top: 233.4vh;
+	left: 70.5vh;
 }
 
 #rodape{
@@ -107,7 +974,6 @@ nav ul li a:hover::after{
     height: 21vh;
     width: 100%;
     color: white; /* Adicionei uma cor de texto para maior visibilidade */
-
 }
 .rodape{
 	box-sizing: border-box;
