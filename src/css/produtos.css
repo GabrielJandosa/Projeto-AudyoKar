@@ -104,9 +104,20 @@ main {
 }
 
 .fade-in {
+	opacity: 0;
+	transition: opacity 1.2s;
+}
+
+.fade-in-visible {
+	opacity: 1;
+}
+
+/* Também posso fazer um transform
+.fade-in {
     transform: scale(0.4);
     transition: transform 1.2s;
 }
+*/
 
 .TITU1 {
 	position: absolute;
@@ -239,6 +250,11 @@ main {
 	border: 2px solid #F00;
 }
 
+#img1:hover {
+    transform: scale(1.2);
+    transition: transform 1.2s;
+}
+
 .produto2 {
 	position: absolute;
 
@@ -261,6 +277,11 @@ main {
 	background-position: center;
 
 	border: 2px solid #F00;
+}
+
+#img2:hover {
+    transform: scale(1.2);
+    transition: transform 1.2s;
 }
 
 .produto3 {
@@ -287,6 +308,11 @@ main {
 	border: 2px solid #F00;
 }
 
+#img3:hover {
+    transform: scale(1.2);
+    transition: transform 1.2s;
+}
+
 .produto4 {
 	position: absolute;
 
@@ -309,6 +335,11 @@ main {
 	background-position: center;
 
 	border: 2px solid #F00;
+}
+
+#img4:hover {
+    transform: scale(1.2);
+    transition: transform 1.2s;
 }
 
 .produto5 {
@@ -335,6 +366,11 @@ main {
 	border: 2px solid #F00;
 }
 
+#img5:hover {
+    transform: scale(1.2);
+    transition: transform 1.2s;
+}
+
 .produto6 {
 	position: absolute;
 
@@ -357,6 +393,11 @@ main {
 	background-position: center;
 
 	border: 2px solid #F00;
+}
+
+#img6:hover {
+    transform: scale(1.2);
+    transition: transform 1.2s;
 }
 
 .produto7 {
@@ -383,6 +424,11 @@ main {
 	border: 2px solid #F00;
 }
 
+#img7:hover {
+    transform: scale(1.2);
+    transition: transform 1.2s;
+}
+
 .produto8 {
 	position: absolute;
 
@@ -405,6 +451,11 @@ main {
 	background-position: center;
 
 	border: 2px solid #F00;
+}
+
+#img8:hover {
+    transform: scale(1.2);
+    transition: transform 1.2s;
 }
 
 .produto9 {
@@ -431,6 +482,11 @@ main {
 	border: 2px solid #F00;
 }
 
+#img9:hover {
+    transform: scale(1.2);
+    transition: transform 1.2s;
+}
+
 .produto10 {
 	position: absolute;
 
@@ -453,6 +509,11 @@ main {
 	background-position: center;
 
 	border: 2px solid #F00;
+}
+
+#img10:hover {
+    transform: scale(1.2);
+    transition: transform 1.2s;
 }
 
 .produto11 {
@@ -479,6 +540,11 @@ main {
 	border: 2px solid #F00;
 }
 
+#img11:hover {
+    transform: scale(1.2);
+    transition: transform 1.2s;
+}
+
 .produto12 {
 	position: absolute;
 
@@ -501,6 +567,11 @@ main {
 	background-position: center;
 
 	border: 2px solid #F00;
+}
+
+#img12:hover {
+    transform: scale(1.2);
+    transition: transform 1.2s;
 }
 
 .produto13 {
@@ -527,6 +598,11 @@ main {
 	border: 2px solid #F00;
 }
 
+#img13:hover {
+    transform: scale(1.2);
+    transition: transform 1.2s;
+}
+
 .produto14 {
 	position: absolute;
 
@@ -551,6 +627,11 @@ main {
 	border: 2px solid #F00;
 }
 
+#img14:hover {
+    transform: scale(1.2);
+    transition: transform 1.2s;
+}
+
 .produto15 {
 	position: absolute;
 
@@ -573,6 +654,11 @@ main {
 	background-position: center;
 
 	border: 2px solid #F00;
+}
+
+#img15:hover {
+    transform: scale(1.2);
+    transition: transform 1.2s;
 }
 
 .sub1 {
