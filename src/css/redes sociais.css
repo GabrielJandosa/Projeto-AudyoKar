@@ -172,9 +172,7 @@ nav ul li a:hover::after{
 }
 
 .img-desktop{
-
-	border-radius: 20px;
-	box-shadow: 3px 3px 20px;
+	border-radius: 20px;	
 }
 
 .slide-content{
@@ -205,7 +203,7 @@ nav ul li a:hover::after{
 .nav-manual, .nav-auto{
 	position: absolute;
 	width: 95%;
-	margin-top: 31%;
+	margin-top: 26%;
 	display: flex;
 	justify-content: center;
 }
