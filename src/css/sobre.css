@@ -112,6 +112,9 @@ nav ul li a:hover::after{
 	transform: scale(1.1);
 }
 
+.texto{
+	height: 20vh;
+}
 .texto p{
 	height: auto;
 	width: 100vh;
