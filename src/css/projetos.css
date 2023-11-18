@@ -102,8 +102,6 @@ nav ul li a:hover::after{
 	
 	top: 5vh;
 	text-align: center;
-
-
 }
 #fotoF1{
 	display: inline-flex;
@@ -127,8 +125,7 @@ nav ul li a:hover::after{
 	transition: 0.5s;
 	
 }
-.fila1
-{
+.fila1 {
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
