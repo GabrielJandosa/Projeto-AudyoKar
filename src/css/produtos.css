@@ -93,16 +93,118 @@ nav ul li a:hover::after{
 }
 
 /* essa div esta apenas mostrando o fundo branco e dividindo navbar do rodape*/
-main {    
-	width: 66%;
-    height: 600vh;
 
-	background-color: #FFFFFF;
+.branco{
+	width: 100%;
+	height: 15vh;
+	background-color: blue;
+	
 }
 
 .fundo {
-	height: 600vh;	
+	background-color: red;
+	width: 100%;
+	height: 600vh;
+
 }
+
+/* PRODUTO A ESQUERDA ---------------------------*/
+
+.p1{
+	width: 100%;
+	height: 40vh;
+	background-color: aqua;
+
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	align-items: center;
+
+	top: 10vh;
+	left: 2vh;
+}
+
+.fotoE{
+	width: 30%;
+	height: 30vh;
+
+	border-radius: 40px;
+	border: solid red 2px;
+	
+	background-color: white;
+	background-image: url(../assets/MCP/Modulo1.jpg);
+	background-size: 90%;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+
+.texto{
+	width: 70%;
+	height: 40vh;
+
+	display: flex;
+	flex-direction: column;
+	
+	justify-content: center;
+	text-align: center;
+}
+h1{
+	padding: 5px;
+	border-bottom: solid 2px red;
+	margin-left: 50vh;
+	margin-right: 50vh;
+}
+
+/*PRODUTO A DIREITA-----------------------------------*/
+
+.p2{
+	width: 100%;
+	height: 40vh;
+	background-color: aqua;
+
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	align-items: center;
+
+	top: 10vh;
+	right: 2vh;
+}
+
+.fotoD{
+	width: 30%;
+	height: 30vh;
+
+	border-radius: 40px;
+	border: solid red 2px;
+	
+	background-color: white;
+	background-image: url(../assets/MCP/Modulo1.jpg);
+	background-size: 90%;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+
+.texto{
+	width: 70%;
+	height: 40vh;
+
+	display: flex;
+	flex-direction: column;
+	
+	justify-content: center;
+	text-align: center;
+}
+h1{
+	padding: 5px;
+	border-bottom: solid 2px red;
+	margin-left: 40vh;
+	margin-right: 40vh;
+}
+
+
 
 .fade-in {
 	opacity: 0;
@@ -113,15 +215,10 @@ main {
 	opacity: 1;
 }
 
-/* Também posso fazer um transform
-.fade-in {
-    transform: scale(0.4);
-    transition: transform 1.2s;
-}
-*/
+/*
 
 .TITU1 {
-	position: absolute;
+	position: relative;
 
 	top: 12%;
 	left: 32%;
@@ -142,7 +239,7 @@ main {
 }
 
 .TITU2 {
-	position: absolute;
+	position: relative;
 
 	top: 128vh;
 	left: 32%;
@@ -163,7 +260,7 @@ main {
 }
 
 .TITU3 {
-	position: absolute;
+	position: relative;
 
 	top: 243vh;
 	left: 40%;
@@ -184,7 +281,7 @@ main {
 }
 
 .TITU4 {
-	position: absolute;
+	position: relative;
 
 	top: 353vh;
 	left: 40%;
@@ -242,7 +339,7 @@ main {
 	width: 38%;
 }
 
-#img1 {
+.img1 {
 	background-image: url(../assets/MCP/Modulo1.jpg);
 	
 	background-size: cover;
@@ -251,13 +348,13 @@ main {
 	border: 2px solid #F00;
 }
 
-#img1:hover {
+.img1:hover {
     transform: scale(1.2);
     transition: transform 1.2s;
 }
 
 .produto2 {
-	position: absolute;
+	position: relativerelative;
 
 	cursor: default;
 	
@@ -286,7 +383,7 @@ main {
 }
 
 .produto3 {
-	position: absolute;
+	position: relativerelative;
 
 	cursor: default;
 
@@ -315,7 +412,7 @@ main {
 }
 
 .produto4 {
-	position: absolute;
+	position:relative;
 
 	cursor: default;
 
@@ -344,7 +441,7 @@ main {
 }
 
 .produto5 {
-	position: absolute;
+	position: relative;
 
 	cursor: default;
 
@@ -373,7 +470,7 @@ main {
 }
 
 .produto6 {
-	position: absolute;
+	position: relative;
 
 	cursor: default;
 
@@ -402,7 +499,7 @@ main {
 }
 
 .produto7 {
-	position: absolute;
+	position: relative;
 
 	cursor: default;
 
@@ -431,7 +528,7 @@ main {
 }
 
 .produto8 {
-	position: absolute;
+	position: relative;
 
 	cursor: default;
 
@@ -460,7 +557,7 @@ main {
 }
 
 .produto9 {
-	position: absolute;
+	position: relative;
 
 	cursor: default;
 
@@ -489,7 +586,7 @@ main {
 }
 
 .produto10 {
-	position: absolute;
+	position: relative;
 
 	cursor: default;
 
@@ -518,7 +615,7 @@ main {
 }
 
 .produto11 {
-	position: absolute;
+	position: relative;
 
 	cursor: default;
 
@@ -547,7 +644,7 @@ main {
 }
 
 .produto12 {
-	position: absolute;
+	position: relative;
 
 	cursor: default;
 
@@ -576,7 +673,7 @@ main {
 }
 
 .produto13 {
-	position: absolute;
+	position: relative;
 
 	cursor: default;
 
@@ -605,7 +702,7 @@ main {
 }
 
 .produto14 {
-	position: absolute;
+	position: relative;
 
 	cursor: default;
 
@@ -634,7 +731,7 @@ main {
 }
 
 .produto15 {
-	position: absolute;
+	position: relative;
 
 	cursor: default;
 
@@ -1082,6 +1179,8 @@ main {
 	top: 233.4vh;
 	left: 70.5vh;
 }
+
+*/
 
 #rodape{
 
