@@ -19,9 +19,11 @@ header {
 	position: fixed;
 	display: flex;
 	flex-direction: column;
-	justify-content: center; /* Centraliza horizontalmente */
-	align-items: center; /* Centraliza verticalmente */
-	gap: 10px; 
+	justify-content: center;
+	/* Centraliza horizontalmente */
+	align-items: center;
+	/* Centraliza verticalmente */
+	gap: 10px;
 
 	background-image: url(../assets/header.png);
 	background-repeat: no-repeat;
@@ -36,18 +38,22 @@ header {
 }
 
 nav {
-	display:flex;
+	display: flex;
 	justify-content: center;
 }
 
 nav ul {
 	text-align: center;
 	background-color: rgb(255, 255, 255 .7);
-	margin: 0; /* Removendo margem padrão do ul */
-	height: 30px; /* Defina a altura desejada */
+	margin: 0;
+	/* Removendo margem padrão do ul */
+	height: 30px;
+	/* Defina a altura desejada */
 	display: flex;
-	justify-content: center; /* Centraliza horizontalmente os itens da lista */
-	align-items: center; /* Centraliza verticalmente os itens da lista */
+	justify-content: center;
+	/* Centraliza horizontalmente os itens da lista */
+	align-items: center;
+	/* Centraliza verticalmente os itens da lista */
 }
 
 nav ul li {
@@ -56,13 +62,14 @@ nav ul li {
 	margin-left: 5px;
 	display: flex;
 	align-items: center;
-	
+
 }
 
 
 nav ul li a {
 	text-align: center;
-	text-decoration: none; /* Remove o sublinhado dos links */
+	text-decoration: none;
+	/* Remove o sublinhado dos links */
 	color: rgb(255, 255, 255);
 	margin-left: 20px;
 	margin-right: 20px;
@@ -70,14 +77,14 @@ nav ul li a {
 	position: relative;
 	font-size: 14px;
 	font-style: italic;
-	
+
 }
 
-nav ul li a::after{
+nav ul li a::after {
 	content: " ";
 	width: 0px;
-	height:4px;
-	background-color:red;
+	height: 4px;
+	background-color: red;
 	position: absolute;
 	top: 20px;
 	left: 0;
@@ -86,125 +93,243 @@ nav ul li a::after{
 
 }
 
-nav ul li a:hover::after{
-
+nav ul li a:hover::after {
 	width: 30px;
-
 }
 
 /* essa div esta apenas mostrando o fundo branco e dividindo navbar do rodape*/
 
-.branco{
+.branco {
 	width: 100%;
 	height: 15vh;
-	background-color: blue;
-	
+
+	background-color: #FFF;
 }
 
 .fundo {
-	background-color: red;
 	width: 100%;
-	height: 600vh;
+	height: 658vh;
 
+	background-color: #FFF;
 }
 
-/* PRODUTO A ESQUERDA ---------------------------*/
-
-.p1{
-	width: 100%;
-	height: 40vh;
-	background-color: aqua;
-
-	overflow: hidden;
-	position: relative;
-	display: flex;
-	align-items: center;
-
-	top: 10vh;
-	left: 2vh;
-}
-
-.fotoE{
+.fotoEsquerda {
 	width: 30%;
-	height: 30vh;
+	height: 32vh;
+
+	margin-left: 4vh;
+
+	background-color: #FFF;
 
 	border-radius: 40px;
-	border: solid red 2px;
-	
-	background-color: white;
-	background-image: url(../assets/MCP/Modulo1.jpg);
-	background-size: 90%;
-	background-repeat: no-repeat;
-	background-position: center;
-
+	border: solid #F00 2px;
 }
 
-.texto{
+.textoEsquerda {
+	display: flex;
+
 	width: 70%;
 	height: 40vh;
 
-	display: flex;
+	margin-right: 7vh;
+
 	flex-direction: column;
-	
-	justify-content: center;
+	justify-content: baseline;
 	text-align: center;
 }
-h1{
-	padding: 5px;
-	border-bottom: solid 2px red;
-	margin-left: 50vh;
-	margin-right: 50vh;
+
+.textoEsquerda > h1 {
+	border-bottom: solid 2px #F00;
+
+	margin-left: 35vh;
+	margin-right: 35vh;
 }
 
-/*PRODUTO A DIREITA-----------------------------------*/
-
-.p2{
-	width: 100%;
-	height: 40vh;
-	background-color: aqua;
-
-	overflow: hidden;
-	position: relative;
-	display: flex;
-	align-items: center;
-
-	top: 10vh;
-	right: 2vh;
-}
-
-.fotoD{
+.fotoDireita {
 	width: 30%;
-	height: 30vh;
+	height: 32vh;
+
+	margin-right: 4vh;
+
+	background-color: #FFF;
 
 	border-radius: 40px;
-	border: solid red 2px;
-	
-	background-color: white;
-	background-image: url(../assets/MCP/Modulo1.jpg);
-	background-size: 90%;
-	background-repeat: no-repeat;
-	background-position: center;
-
+	border: solid #F00 2px;
 }
 
-.texto{
+.textoDireita {
+	display: flex;
+
 	width: 70%;
 	height: 40vh;
 
-	display: flex;
 	flex-direction: column;
-	
+	text-align: center;
+
+	padding-right: 6vh;
+	padding-left: 0vh;
+}
+
+.textoDireita > h1 {
+	border-bottom: solid 2px #F00;
+
+	margin-left: 35vh;
+	margin-right: 35vh;
+}
+
+.fotoDireita:hover {
+	transform: scale(1.1);
+	box-shadow: -5px 5px 5px 1px rgba(255, 0, 0, 0.495);
+	transition: 0.5s;
+}
+
+.fotoEsquerda:hover {
+	transform: scale(1.1);
+	box-shadow: 5px 5px 5px 1px rgba(255, 0, 0, 0.495);
+	transition: 0.5s;
+}
+
+.titulo1 {
+	position: relative;
+	cursor: default;
+	overflow: hidden;
+
 	justify-content: center;
 	text-align: center;
-}
-h1{
-	padding: 5px;
-	border-bottom: solid 2px red;
-	margin-left: 40vh;
-	margin-right: 40vh;
+
+	border-bottom: solid 2px transparent;
+
+	font-style: italic;
+	font-weight: bold;
 }
 
+.titulo1::after {
+	position: relative;
+	display: block;
+	content: '';
 
+	width: 34%;
+	height: 4px;
+
+	background-image: linear-gradient(to right, #FFF, #000, #F00);
+	
+	bottom: 2.5vh;
+	margin-left: 33%;
+}
+
+.titulo2 {
+	position: relative;
+	cursor: default;
+	overflow: hidden;
+
+	justify-content: center;
+	text-align: center;
+
+	border-bottom: solid 2px transparent;
+
+	font-style: italic;
+	font-weight: bold;
+}
+
+.titulo2::after {
+	position: relative;
+	display: block;
+	content: '';
+
+	width: 40%;
+	height: 4px;
+
+	background-image: linear-gradient(to right, #FFF, #000, #F00);
+	
+	bottom: 2.5vh;
+	margin-left: 30%;
+}
+
+.titulo3 {
+	position: relative;
+	cursor: default;
+	overflow: hidden;
+
+	justify-content: center;
+	text-align: center;
+
+	top: 2vh;
+
+	border-bottom: solid 2px transparent;
+
+	font-style: italic;
+	font-weight: bold;
+}
+
+.titulo3::after {
+	position: relative;
+	display: block;
+	content: '';
+
+	width: 24%;
+	height: 4px;
+
+	background-image: linear-gradient(to right, #FFF, #000, #F00);
+	
+	bottom: 2.5vh;
+	margin-left: 38%;
+}
+
+.titulo4 {
+	position: relative;
+	cursor: default;
+	overflow: hidden;
+
+	justify-content: center;
+	text-align: center;
+
+	border-bottom: solid 2px transparent;
+
+	font-style: italic;
+	font-weight: bold;
+}
+
+.titulo4::after {
+	position: relative;
+	display: block;
+	content: '';
+
+	width: 20%;
+	height: 4px;
+
+	background-image: linear-gradient(to right, #FFF, #000, #F00);
+	
+	bottom: 2.5vh;
+	margin-left: 40%;
+}
+
+.titulo5 {
+	position: relative;
+	cursor: default;
+	overflow: hidden;
+
+	justify-content: center;
+	text-align: center;
+
+	border-bottom: solid 2px transparent;
+
+	font-style: italic;
+	font-weight: bold;
+}
+
+.titulo5::after {
+	position: relative;
+	display: block;
+	content: '';
+
+	width: 10%;
+	height: 4px;
+
+	background-image: linear-gradient(to right, #FFF, #000, #F00);
+	
+	bottom: 2.5vh;
+	margin-left: 45%;
+}
 
 .fade-in {
 	opacity: 0;
@@ -215,1015 +340,458 @@ h1{
 	opacity: 1;
 }
 
-/*
-
-.TITU1 {
-	position: relative;
-
-	top: 12%;
-	left: 32%;
-
-	font: normal bold 5vh 'Montserrat', sans-serif;
-}
-
-.TITU1b {
-	position: relative;
-
-	width: 65vh;
-	height: 0.5vh;
-
-	left: 68vh;
-	top: 3.7%;
-
-	background: linear-gradient(to right, #DDD, #000, #F00);
-}
-
-.TITU2 {
-	position: relative;
-
-	top: 128vh;
-	left: 32%;
-
-	font: normal bold 5vh 'Montserrat', sans-serif;
-}
-
-.TITU2b {
-	position: relative;
-
-	width: 78vh;
-	height: 0.5vh;
-
-	left: 68vh;
-	top: 6%;
-
-	background: linear-gradient(to right, #EEE, #000, #F00);
-}
-
-.TITU3 {
-	position: relative;
-
-	top: 243vh;
-	left: 40%;
-
-	font: normal bold 5vh 'Montserrat', sans-serif;
-}
-
-.TITU3b {
-	position: relative;
-
-	width: 32vh;
-	height: 0.5vh;
-
-	left: 84.5vh;
-	top: 14.4%;
-
-	background: linear-gradient(to right, #EEE, #000, #F00);
-}
-
-.TITU4 {
-	position: relative;
-
-	top: 353vh;
-	left: 40%;
-	
-	font: normal bold 5vh 'Montserrat', sans-serif;
-}
-
-.TITU4b {
-	position: relative;
-
-	width: 29.4vh;
-	height: 0.5vh;
-
-	left: 85vh;
-	top: 22.4%;
-
-	background: linear-gradient(to right, #EEE, #000, #F00);
-}
-
-.TITU5 {
-	position: relative;
-
-	top: 188vh;
-	left: 60.6%;
-	
-	margin-right: 120vh;
-
-	font: normal bold 5vh 'Montserrat', sans-serif;
-}
-
-.TITU5b {
-	position: relative;
-
-	width: 17.2vh;
-	height: 0.5vh;
-
-	left: 84.7vh;
-	top: 30.5%;
-
-	background: linear-gradient(to right, #EEE, #000, #F00);
-}
+/*PRODUTO À ESQUERDA*/
 
 .produto1 {
 	position: relative;
+	display: flex;
 
 	cursor: default;
 
-	border-radius: 10%;
-	box-shadow: 0.5vh 0.5vh 1.4vh 0.6vh;
-	
-	top: 4%;
-	left: 8vh;
+	width: 100%;
+	height: 40vh;
 
-	height: 30vh;
-	width: 38%;
+	background-color: #FFF;
+
+	overflow: hidden;
+	align-items: center;
+
+	left: 2vh;
 }
 
-.img1 {
+#img1 {
 	background-image: url(../assets/MCP/Modulo1.jpg);
-	
-	background-size: cover;
+	background-size: 100%;
+	background-repeat: no-repeat;
 	background-position: center;
-
-	border: 2px solid #F00;
 }
 
-.img1:hover {
-    transform: scale(1.2);
-    transition: transform 1.2s;
-}
+/*PRODUTO A DIREITA*/
 
 .produto2 {
-	position: relativerelative;
+	position: relative;
+	display: flex;
 
 	cursor: default;
-	
-	border-radius: 10%;
-	box-shadow: -0.5vh 0.5vh 1.4vh 0.6vh;
 
-	top: 62vh;
-	right: 8vh;
+	width: 100%;
+	height: 40vh;
 
-	height: 30vh;
-	width: 25%;
+	background-color: #FFF;
+
+	overflow: hidden;
+	align-items: center;
+
+	top: 2vh;
+	right: 2vh;
 }
 
 #img2 {
 	background-image: url(../assets/MCP/Módulo2.jpg);
-
-	background-size: cover;
+	background-size: 100%;
+	background-repeat: no-repeat;
 	background-position: center;
-
-	border: 2px solid #F00;
 }
 
-#img2:hover {
-    transform: scale(1.2);
-    transition: transform 1.2s;
-}
+/* Produto a Esquerda*/
 
 .produto3 {
-	position: relativerelative;
+	position: relative;
+	display: flex;
 
 	cursor: default;
 
-	border-radius: 10%;
-	box-shadow: 0.5vh 0.5vh 1.4vh 0.6vh;
-	
-	top: 100vh;
-	left: 8vh;
+	width: 100%;
+	height: 40vh;
 
-	height: 30vh;
-	width: 25%;
+	background-color: #FFF;
+
+	overflow: hidden;
+	align-items: center;
+
+	top: 4vh;
+	left: 2vh;
 }
 
 #img3 {
 	background-image: url(../assets/MCP/Modulo3.jpg);
-
-	background-size: cover;
+	background-size: 100%;
+	background-repeat: no-repeat;
 	background-position: center;
-
-	border: 2px solid #F00;
 }
 
-#img3:hover {
-    transform: scale(1.2);
-    transition: transform 1.2s;
-}
+/*PRODUTO À ESQUERDA*/
 
 .produto4 {
-	position:relative;
+	position: relative;
+	display: flex;
 
 	cursor: default;
 
-	border-radius: 10%;
-	box-shadow: 0.5vh 0.5vh 1.4vh 0.6vh;
-	
-	top: 141vh;
-	left: 8vh;
+	width: 100%;
+	height: 40vh;
 
-	height: 30vh;
-	width: 25%;
+	background-color: #FFF;
+
+	overflow: hidden;
+	align-items: center;
+
+	top: 0vh;
+	left: 2vh;
 }
 
 #img4 {
 	background-image: url(../assets/MCP/Processador1.png);
-
-	background-size: cover;
+	background-size: 100%;
+	background-repeat: no-repeat;
 	background-position: center;
-
-	border: 2px solid #F00;
 }
 
-#img4:hover {
-    transform: scale(1.2);
-    transition: transform 1.2s;
-}
+/*PRODUTO A DIREITA*/
 
 .produto5 {
 	position: relative;
+	display: flex;
 
 	cursor: default;
 
-	border-radius: 10%;
-	box-shadow: -0.5vh 0.5vh 1.4vh 0.6vh;
-	
-	top: 178vh;
-	right: 8vh;
+	width: 100%;
+	height: 40vh;
 
-	height: 30vh;
-	width: 25%;
+	background-color: #FFF;
+
+	overflow: hidden;
+	align-items: center;
+
+	top: 2vh;
+	right: 2vh;
 }
 
 #img5 {
 	background-image: url(../assets/MCP/Processador2.png);
-
-	background-size: cover;
+	background-size: 100%;
+	background-repeat: no-repeat;
 	background-position: center;
-
-	border: 2px solid #F00;
 }
 
-#img5:hover {
-    transform: scale(1.2);
-    transition: transform 1.2s;
-}
+/* Produto a Esquerda*/
 
 .produto6 {
 	position: relative;
+	display: flex;
 
 	cursor: default;
 
-	border-radius: 10%;
-	box-shadow: 0.5vh 0.5vh 1.4vh 0.6vh;
-	
-	top: 215vh;
-	left: 8vh;
+	width: 100%;
+	height: 40vh;
 
-	height: 30vh;
-	width: 25%;
+	background-color: #FFF;
+
+	overflow: hidden;
+	align-items: center;
+
+	top: 4vh;
+	left: 2vh;
 }
 
 #img6 {
 	background-image: url(../assets/MCP/Processador3.png);
-
-	background-size: cover;
+	background-size: 100%;
+	background-repeat: no-repeat;
 	background-position: center;
-
-	border: 2px solid #F00;
 }
 
-#img6:hover {
-    transform: scale(1.2);
-    transition: transform 1.2s;
-}
+/*PRODUTO À ESQUERDA*/
 
 .produto7 {
 	position: relative;
+	display: flex;
 
 	cursor: default;
 
-	border-radius: 10%;
-	box-shadow: 0.5vh 0.5vh 1.4vh 0.6vh;
-	
-	top: 256vh;
-	left: 8vh;
+	width: 100%;
+	height: 40vh;
 
-	height: 30vh;
-	width: 25%;
+	background-color: #FFF;
+
+	overflow: hidden;
+	align-items: center;
+
+	top: 0vh;
+	left: 2vh;
 }
 
 #img7 {
 	background-image: url(../assets/MCP/AutoFalante\ DuasVias.png);
-
-	background-size: cover;
+	background-size: 60%;
+	background-repeat: no-repeat;
 	background-position: center;
-
-	border: 2px solid #F00;
 }
 
-#img7:hover {
-    transform: scale(1.2);
-    transition: transform 1.2s;
-}
+/*PRODUTO A DIREITA*/
 
 .produto8 {
 	position: relative;
+	display: flex;
 
 	cursor: default;
 
-	border-radius: 10%;
-	box-shadow: -0.5vh 0.5vh 1.4vh 0.6vh;
-	
-	top: 293vh;
-	right: 8vh;
+	width: 100%;
+	height: 40vh;
 
-	height: 30vh;
-	width: 25%;
+	background-color: #FFF;
+
+	overflow: hidden;
+	align-items: center;
+
+	top: 2vh;
+	right: 2vh;
 }
 
 #img8 {
 	background-image: url(../assets/MCP/AutoFalante6x9.png);
-
-	background-size: cover;
+	background-size: 70%;
+	background-repeat: no-repeat;
 	background-position: center;
-
-	border: 2px solid #F00;
 }
 
-#img8:hover {
-    transform: scale(1.2);
-    transition: transform 1.2s;
-}
+/* Produto a Esquerda*/
 
 .produto9 {
 	position: relative;
+	display: flex;
 
 	cursor: default;
 
-	border-radius: 10%;
-	box-shadow: 0.5vh 0.5vh 1.4vh 0.6vh;
-	
-	top: 325vh;
-	left: 8vh;
+	width: 100%;
+	height: 40vh;
 
-	height: 30vh;
-	width: 25%;
+	background-color: #FFF;
+
+	overflow: hidden;
+	align-items: center;
+
+	top: 4vh;
+	left: 2vh;
 }
 
 #img9 {
 	background-image: url(../assets/MCP/AutoFalanteTriaxial.png);
-
-	background-size: cover;
+	background-size: 60%;
+	background-repeat: no-repeat;
 	background-position: center;
-
-	border: 2px solid #F00;
 }
 
-#img9:hover {
-    transform: scale(1.2);
-    transition: transform 1.2s;
-}
+/*PRODUTO À ESQUERDA*/
 
 .produto10 {
 	position: relative;
+	display: flex;
 
 	cursor: default;
 
-	border-radius: 10%;
-	box-shadow: 0.5vh 0.5vh 1.4vh 0.6vh;
-	
-	top: 366vh;
-	left: 8vh;
+	width: 100%;
+	height: 40vh;
 
-	height: 30vh;
-	width: 25%;
+	background-color: #FFF;
+
+	overflow: hidden;
+	align-items: center;
+
+	top: 0vh;
+	left: 2vh;
 }
 
 #img10 {
 	background-image: url(../assets/MCP/Subwoofers1.png);
-
-	background-size: cover;
+	background-size: 80%;
+	background-repeat: no-repeat;
 	background-position: center;
-
-	border: 2px solid #F00;
 }
 
-#img10:hover {
-    transform: scale(1.2);
-    transition: transform 1.2s;
-}
+/*PRODUTO A DIREITA*/
 
 .produto11 {
 	position: relative;
+	display: flex;
 
 	cursor: default;
 
-	border-radius: 10%;
-	box-shadow: -0.5vh 0.5vh 1.4vh 0.6vh;
-	
-	top: 404vh;
-	right: 8vh;
+	width: 100%;
+	height: 40vh;
 
-	height: 30vh;
-	width: 25%;
+	background-color: #FFF;
+
+	overflow: hidden;
+	align-items: center;
+
+	top: 2vh;
+	right: 2vh;
 }
 
 #img11 {
 	background-image: url(../assets/MCP/Subwoofers2.png);
-
-	background-size: cover;
+	background-size: 60%;
+	background-repeat: no-repeat;
 	background-position: center;
-
-	border: 2px solid #F00;
 }
 
-#img11:hover {
-    transform: scale(1.2);
-    transition: transform 1.2s;
-}
+/* Produto a Esquerda*/
 
 .produto12 {
 	position: relative;
+	display: flex;
 
 	cursor: default;
 
-	border-radius: 10%;
-	box-shadow: 0.5vh 0.5vh 1.4vh 0.6vh;
-	
-	top: 442vh;
-	left: 8vh;
+	width: 100%;
+	height: 40vh;
 
-	height: 30vh;
-	width: 25%;
+	background-color: #FFF;
+
+	overflow: hidden;
+	align-items: center;
+
+	top: 4vh;
+	left: 2vh;
 }
 
 #img12 {
 	background-image: url(../assets/MCP/Subwoofers3.png);
-
-	background-size: cover;
+	background-size: 65%;
+	background-repeat: no-repeat;
 	background-position: center;
-
-	border: 2px solid #F00;
 }
 
-#img12:hover {
-    transform: scale(1.2);
-    transition: transform 1.2s;
-}
+/*PRODUTO À ESQUERDA*/
 
 .produto13 {
 	position: relative;
+	display: flex;
 
 	cursor: default;
 
-	border-radius: 10%;
-	box-shadow: 0.5vh 0.5vh 1.4vh 0.6vh;
-	
-	top: 486.2vh;
-	left: 8vh;
+	width: 100%;
+	height: 40vh;
 
-	height: 30vh;
-	width: 25%;
+	background-color: #FFF;
+
+	overflow: hidden;
+	align-items: center;
+
+	top: 0vh;
+	left: 2vh;
 }
 
 #img13 {
 	background-image: url(../assets/MCP/radio1.png);
-
-	background-size: cover;
+	background-size: 40%;
+	background-repeat: no-repeat;
 	background-position: center;
-
-	border: 2px solid #F00;
 }
 
-#img13:hover {
-    transform: scale(1.2);
-    transition: transform 1.2s;
-}
+/*PRODUTO A DIREITA*/
 
 .produto14 {
 	position: relative;
+	display: flex;
 
 	cursor: default;
 
-	border-radius: 10%;
-	box-shadow: -0.5vh 0.5vh 1.4vh 0.6vh;
-	
-	top: 525vh;
-	right: 8vh;
+	width: 100%;
+	height: 40vh;
 
-	height: 30vh;
-	width: 25%;
+	background-color: #FFF;
+
+	overflow: hidden;
+	align-items: center;
+
+	top: 2vh;
+	right: 2vh;
 }
 
 #img14 {
 	background-image: url(../assets/MCP/radio2.png);
-
-	background-size: cover;
+	background-size: 60%;
+	background-repeat: no-repeat;
 	background-position: center;
-
-	border: 2px solid #F00;
 }
 
-#img14:hover {
-    transform: scale(1.2);
-    transition: transform 1.2s;
-}
+/* Produto a Esquerda*/
 
 .produto15 {
 	position: relative;
+	display: flex;
 
 	cursor: default;
 
-	border-radius: 10%;
-	box-shadow: 0.5vh 0.5vh 1.4vh 0.6vh;
-	
-	top: 561.4vh;
-	left: 8vh;
+	width: 100%;
+	height: 40vh;
 
-	height: 30vh;
-	width: 25%;
+	background-color: #FFF;
+
+	overflow: hidden;
+	align-items: center;
+
+	top: 4vh;
+	left: 2vh;
 }
 
 #img15 {
 	background-image: url(../assets/MCP/radio3.png);
-
-	background-size: cover;
+	background-size: 65%;
+	background-repeat: no-repeat;
 	background-position: center;
-
-	border: 2px solid #F00;
 }
 
-#img15:hover {
-    transform: scale(1.2);
-    transition: transform 1.2s;
-}
+#rodape {
 
-.sub1 {
 	position: relative;
-
-	cursor: default;
-
-	top: -7.6vh;
-	left: 70.2vh;
-}
-
-.texto1 {
-	position: relative;
-	
-	cursor: default;
-	
+	bottom: 0;
+	background-color: black;
+	height: 21vh;
 	width: 100%;
-	
-	top: -8.8vh;
-	left: 63vh;
+	color: white;
+	/* Adicionei uma cor de texto para maior visibilidade */
 }
 
-.linhap1 {
-	background-color: #F00;
-
-	position: relative;
-
-	width: 100%;
-	height: 0.6vh;
-		
-	position: relative;
-	top: 0.6vh;
-	left: 70.7vh;
-}
-
-.sub2 {
-	position: relative;
-
-	top: 5.8vh;
-	left: 2vh;
-}
-
-.texto2 {
-	position: relative;
-
-	top: 5vh;
-	right: 5vh;
-}
-
-.linhap2 {
-	background-color: #F00;
-
-	width: 100%;
-	height: 0.6vh;
-		
-	position: relative;
-
-	top: 14.4vh;
-	left: 2.5vh;
-}
-
-.sub3 {
-	position: relative;
-
-	cursor: default;
-
-	top: 19.5vh;
-	left: 70.2vh;
-}
-
-.texto3 {
-	position: relative;
-	
-	cursor: default;
-	
-	width: 100%;
-	
-	top: 19.3vh;
-	left: 63vh;
-}
-
-.linhap3 {
-	background-color: #F00;
-
-	position: relative;
-
-	cursor: default;
-
-	width: 100%;
-	height: 0.6vh;
-		
-	position: relative;
-	top: 27.5vh;
-	left: 70.5vh;
-}
-
-.sub4 {
-	position: relative;
-
-	top: 37vh;
-	left: 70vh;
-}
-
-.texto4 {
-	position: relative;
-	
-	width: 100%;
-	
-	top: 37vh;
-	left: 63vh;
-}
-
-.linhap4 {
-	background-color: #F00;
-
-	position: relative;
-
-	width: 100%;
-	height: 0.6vh;
-		
-	top: 45vh;
-	left: 70.3vh;
-}
-
-.sub5 {
-	position: relative;
-
-	top: 51.4vh;
-	left: 2vh;
-}
-
-.texto5 {
-	position: relative;
-
-	top: 51.4vh;
-	right: 5vh;
-}
-
-.linhap5 {
-	background-color: #f00;
-
-	position: relative;
-
-	width: 100%;
-	height: 0.6vh;
-		
-	top: 59.4vh;
-	left: 2vh;
-}
-
-.sub6 {
-	position: relative;
-
-	top: 63vh;
-	left: 70.2vh;
-}
-
-.texto6 {
-	position: relative;
-	
-	width: 100%;
-
-	top: 62.6vh;
-	left: 63vh;
-}
-
-.linhap6 {
-	background-color: #F00;
-
-	position: relative;
-
-	width: 100%;
-	height: 0.6vh;
-
-	top: 71vh;
-	left: 70.5vh;
-}
-
-.sub7 {
-	position: relative;
-
-	top: 88.2vh;
-	left: 70.2vh;
-}
-
-.texto7 {
-	position: relative;
-	
-	width: 100%;
-	
-	top: 87.7vh;
-	left: 63vh;
-}
-
-.linhap7 {
-	background-color: #F00;
-
-	position: relative;
-
-	width: 100%;
-	height: 0.6vh;
-		
-	top: 96.2vh;
-	left: 70.5vh;
-}
-
-.sub8 {
-	position: relative;
-
-	top: 105vh;
-	left: 2vh;
-}
-
-.texto8 {
-	position: relative;
-
-	top: 104.5vh;
-	right: 5vh;
-}
-
-.linhap8 {
-	background-color: #F00;
-
-	position: relative;
-
-	width: 100%;
-	height: 0.6vh;
-		
-	top: 113vh;
-	left: 2vh;
-}
-
-.sub9 {
-	position: relative;
-
-	top: 116vh;
-	left: 70.2vh;
-}
-
-.texto9 {
-	position: relative;
-	
-	width: 100%;
-	
-	top: 115vh;
-	left: 63vh;
-}
-
-.linhap9 {
-	background-color: #F00;
-
-	position: relative;
-
-	width: 100%;
-	height: 0.6vh;
-		
-	top: 124vh;
-	left: 70.5vh;
-}
-
-.sub10{
-	position: relative;
-
-	top: 137.4vh;
-	left: 70.2vh;
-}
-
-.texto10 {
-	position: relative;
-	
-	width: 100%;
-	
-	top: 137.5vh;
-	left: 63vh;
-}
-.linhap10 {
-	background-color: #F00;
-
-	position: relative;
-
-	width: 100%;
-	height: 0.6vh;
-	
-	top: 145.5vh;
-	left: 70.5vh;
-}
-
-.sub11 {
-	position: relative;
-
-	top: 158.5vh;
-	left: 2vh;
-}
-
-.texto11 {
-	position: relative;
-
-	top: 158vh;
-	right: 5vh;
-}
-
-.linhap11 {
-	background-color: #F00;
-
-	position: relative;
-
-	width: 100%;
-	height: 0.6vh;
-		
-	top: 166.5vh;
-	left: 2vh;
-}
-
-.sub12 {
-	position: relative;
-
-	top: 178vh;
-	left: 70.2vh;
-}
-
-.texto12 {
-	position: relative;
-	
-	width: 100%;
-	
-	top: 177.5vh;
-	left: 63vh;
-}
-
-.linhap12 {
-	background-color: #F00;
-
-	position: relative;
-
-	width: 100%;
-	height: 0.6vh;
-		
-	top: 186vh;
-	left: 70.5vh;
-}
-
-.sub13 {
-	position: relative;
-
-	top: 188vh;
-	left: 70.2vh;
-}
-
-.texto13 {
-	position: relative;
-	
-	width: 100%;
-	
-	top: 187.6vh;
-	left: 63vh;
-}
-
-.linhap13 {
-	background-color: #F00;
-
-	position: relative;
-
-	width: 100%;
-	height: 0.6vh;
-		
-	top: 196vh;
-	left: 70.5vh;
-}
-
-.sub14 {
-	position: relative;
-
-	top: 208vh;
-	left: 2vh;
-}
-
-.texto14 {
-	position: relative;
-
-	top: 207.5vh;
-	right: 5vh;
-}
-
-.linhap14 {
-	background-color: #F00;
-
-	position: relative;
-
-	width: 100%;
-	height: 0.6vh;
-		
-	top: 216vh;
-	left: 2vh;
-}
-
-.sub15 {
-	position: relative;
-
-	top: 225.4vh;
-	left: 70.2vh;
-}
-
-.texto15 {
-	position: relative;
-	
-	width: 100%;
-	
-	top: 225.4vh;
-	left: 63vh;
-}
-
-.linhap15 {
-	background-color: #F00;
-
-	position: relative;
-
-	width: 100%;
-	height: 0.6vh;
-		
-	top: 233.4vh;
-	left: 70.5vh;
-}
-
-*/
-
-#rodape{
-
-    position: relative;
-    bottom: 0;
-    background-color: black;
-    height: 21vh;
-    width: 100%;
-    color: white; /* Adicionei uma cor de texto para maior visibilidade */
-}
-.rodape{
+.rodape {
 	box-sizing: border-box;
 	font-size: 10px;
-	justify-content: space-between; /* Isso alinha os elementos filhos à esquerda e à direita */
+	justify-content: space-between;
+	/* Isso alinha os elementos filhos à esquerda e à direita */
 	color: white;
 	display: flex;
-    align-items: center;
+	align-items: center;
 }
 
-.contato{
-	
+.contato {
+
 	width: 300px;
 	height: 100px;
 }
 
-.contato::before{
+.contato::before {
 	margin-right: 10px;
 	content: "";
-    position: absolute;
-    width: 2px; /* Largura da borda esquerda */
-    height: 80%;
-    background: linear-gradient(to bottom, #000000, #302f2f, rgb(0, 0, 0)); 
+	position: absolute;
+	width: 2px;
+	/* Largura da borda esquerda */
+	height: 80%;
+	background: linear-gradient(to bottom, #000000, #302f2f, rgb(0, 0, 0));
 }
-p{
+
+p {
 	margin: 2px;
 	padding-left: 50px;
 }
 
-.rodape h1{
+.rodape h1 {
 	margin: 2px;
 	padding-left: 50px;
 }
-.logorodape{
+
+.logorodape {
 	margin-left: 70px;
 	position: relative;
 	width: 120px;
@@ -1231,66 +799,74 @@ p{
 	background-image: url(/src/assets/Logo.png);
 }
 
-#mapa{
+#mapa {
 	margin: 20px;
 	position: relative;
-    display: flex; 
+	display: flex;
 	box-sizing: content-box;
 	border: 2px solid red;
 }
-.mapa iframe{
-	
+
+.mapa iframe {
+
 	width: 50vh;
 	height: 15vh;
 }
-.linha{
+
+.linha {
 	width: 10px;
 	height: 100%;
-	background-color:black;
+	background-color: black;
 }
-.linha::before{
+
+.linha::before {
 	margin-top: 16px;
 	content: "";
-    position: absolute;
-    width: 2px; /* Largura da borda esquerda */
-    height: 80%;
-    background: linear-gradient(to bottom, #000000, #302f2f, rgb(0, 0, 0)); 
+	position: absolute;
+	width: 2px;
+	/* Largura da borda esquerda */
+	height: 80%;
+	background: linear-gradient(to bottom, #000000, #302f2f, rgb(0, 0, 0));
 }
 
 
-.pagamento{
+.pagamento {
 	position: relative;
 	height: 135px;
 	width: 250px;
-	
+
 
 }
-.pagamento img{
+
+.pagamento img {
 	height: 135px;
 	width: 220px;
 	padding-left: 30px;
 }
 
-.pagamento::before{
+.pagamento::before {
 	margin-top: 18px;
 	content: "";
-    position: absolute;
-    width: 2px; /* Largura da borda esquerda */
-    height: 80%;
-    background: linear-gradient(to bottom, #000000, #302f2f, rgb(0, 0, 0)); 
+	position: absolute;
+	width: 2px;
+	/* Largura da borda esquerda */
+	height: 80%;
+	background: linear-gradient(to bottom, #000000, #302f2f, rgb(0, 0, 0));
 }
 
 @media screen and (max-width: 900px) {
-	.img-desktop{
-			display: none;
+	.img-desktop {
+		display: none;
 	}
 
-	.img-mobile{
-			display:inline;
+	.img-mobile {
+		display: inline;
 	}
 
-	.nav-auto, .nav-manual{
-			margin-top: 60%;
+	.nav-auto,
+	.nav-manual {
+		margin-top: 60%;
 	}
-} 
+}
+
 /*importar coisas código para responsibilidade android*/
