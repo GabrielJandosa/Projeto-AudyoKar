@@ -356,7 +356,9 @@ p{
 	position: relative;
 	width: 120px;
 	height: 30px;
-	background-image: url(/src/assets/Logo.png);
+	background-image: url(../assets/Logo.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
 #mapa{

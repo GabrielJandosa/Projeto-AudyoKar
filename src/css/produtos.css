@@ -1,0 +1,927 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Share+Tech+Mono&display=swap');
+
+body {
+	/* margin - imagine um relogio para as direcoes (top / right / bottom / left)*/
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+}
+
+#logo {
+	width: 155px;
+	height: 40px;
+}
+
+header {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/* Centraliza horizontalmente */
+	align-items: center;
+	/* Centraliza verticalmente */
+	gap: 10px;
+
+	background-image: url(../assets/header.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+
+	padding: 10px;
+	box-sizing: border-box;
+	border-bottom: solid #F00 1px;
+	width: 100%;
+	z-index: 1;
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+}
+
+nav ul {
+	text-align: center;
+	background-color: rgb(255, 255, 255 .7);
+	margin: 0;
+	/* Removendo margem padrão do ul */
+	height: 30px;
+	/* Defina a altura desejada */
+	display: flex;
+	justify-content: center;
+	/* Centraliza horizontalmente os itens da lista */
+	align-items: center;
+	/* Centraliza verticalmente os itens da lista */
+}
+
+nav ul li {
+	display: inline-block;
+	height: 60px;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+
+}
+
+
+nav ul li a {
+	text-align: center;
+	text-decoration: none;
+	/* Remove o sublinhado dos links */
+	color: rgb(255, 255, 255);
+	margin-left: 20px;
+	margin-right: 20px;
+	display: inline;
+	position: relative;
+	font-size: 14px;
+	font-style: italic;
+
+}
+
+nav ul li a::after {
+	content: " ";
+	width: 0px;
+	height: 4px;
+	background-color: red;
+	position: absolute;
+	top: 20px;
+	left: 0;
+	transition: 0.5s;
+	border-radius: 10px;
+
+}
+
+nav ul li a:hover::after {
+	width: 30px;
+}
+
+/* essa div esta apenas mostrando o fundo branco e dividindo navbar do rodape*/
+
+.branco {
+	width: 100%;
+	height: 15vh;
+
+	background-color: #FFF;
+}
+
+.fundo {
+	width: 100%;
+	height: 740vh;
+
+	background-color: #FFF;
+}
+
+.fotoEsquerda {
+	width: 30%;
+	height: 32vh;
+
+	margin-left: 4vh;
+
+	background-color: #FFF;
+
+	border-radius: 40px;
+	border: solid rgb(0, 0, 0) 2px;
+	transition: 0.5s;
+}
+
+.textoEsquerda {
+	display: flex;
+
+	width: 70%;
+	height: 40vh;
+
+	margin-right: 7vh;
+
+	flex-direction: column;
+	justify-content: baseline;
+	text-align: center;
+}
+
+.textoEsquerda > h1 {
+	border-bottom: solid 2px #F00;
+
+	margin-left: 35vh;
+	margin-right: 35vh;
+}
+
+.fotoDireita {
+	width: 30%;
+	height: 32vh;
+
+	margin-right: 4vh;
+
+	background-color: #FFF;
+
+	border-radius: 40px;
+	border: solid rgb(0, 0, 0) 2px;
+
+	transition: 0.5s;
+}
+
+.textoDireita {
+	display: flex;
+
+	width: 70%;
+	height: 40vh;
+
+	flex-direction: column;
+	text-align: center;
+
+	padding-right: 6vh;
+	padding-left: 0vh;
+}
+
+.textoDireita > h1 {
+	border-bottom: solid 2px #F00;
+
+	margin-left: 35vh;
+	margin-right: 35vh;
+}
+
+.fotoDireita:hover {
+	border: solid rgb(255, 0, 0) 2px;
+	transform: scale(1.1);
+	box-shadow: -5px 5px 5px 1px rgba(255, 0, 0, 0.495);
+}
+
+.fotoEsquerda:hover {
+	border: solid rgb(255, 0, 0) 2px;
+	transform: scale(1.1);
+	box-shadow: 5px 5px 5px 1px rgba(255, 0, 0, 0.495);
+}
+
+.titulo1 {
+	position: relative;
+	cursor: default;
+	overflow: hidden;
+	
+
+	background-image: linear-gradient(to right, black, red, black);
+	color: white;
+	box-shadow: 3px 3px 20px red;
+
+	justify-content: center;
+	text-align: center;
+	margin-bottom: 40px;
+
+	border-bottom: solid 2px transparent;
+
+	font-style: italic;
+	font-weight: bold;
+}
+
+.titulo1::after {
+	position: relative;
+	display: block;
+	content: '';
+
+	width: 34%;
+	height: 4px;
+
+	background-image: linear-gradient(to right, #FFF, #ffffff, rgb(255, 255, 255));
+	border-radius: 10px;
+	
+	bottom: 2.5vh;
+	margin-left: 33%;
+}
+
+.titulo2 {
+	position: relative;
+	cursor: default;
+	overflow: hidden;
+
+	justify-content: center;
+	text-align: center;
+	margin-bottom: 40px;
+	margin-top: 40px;
+
+	background-image: linear-gradient(to right, black, red, black);
+	color: white;
+	box-shadow: 3px 3px 20px red;
+
+	border-bottom: solid 2px transparent;
+
+	font-style: italic;
+	font-weight: bold;
+}
+
+.titulo2::after {
+	position: relative;
+	display: block;
+	content: '';
+
+	width: 40%;
+	height: 4px;
+
+	background-image: linear-gradient(to right, #FFF, #ffffff, rgb(255, 255, 255));
+	border-radius: 10px;
+	
+	bottom: 2.5vh;
+	margin-left: 30%;
+}
+
+.titulo3 {
+	position: relative;
+	cursor: default;
+	overflow: hidden;
+
+	justify-content: center;
+	text-align: center;
+	margin-bottom: 40px;
+	margin-top: 40px;
+
+	background-image: linear-gradient(to right, black, red, black);
+	color: white;
+	box-shadow: 3px 3px 20px red;
+
+	top: 2vh;
+
+	border-bottom: solid 2px transparent;
+
+	font-style: italic;
+	font-weight: bold;
+}
+
+.titulo3::after {
+	position: relative;
+	display: block;
+	content: '';
+
+	width: 24%;
+	height: 4px;
+
+	background-image: linear-gradient(to right, #FFF, #ffffff, white);
+	border-radius: 10px;
+	
+	bottom: 2.5vh;
+	margin-left: 38%;
+}
+
+.titulo4 {
+	position: relative;
+	cursor: default;
+	overflow: hidden;
+
+	justify-content: center;
+	text-align: center;
+	margin-bottom: 40px;
+	margin-top: 40px;
+
+	background-image: linear-gradient(to right, black, red, black);
+	color: white;
+	box-shadow: 3px 3px 20px red;
+
+	border-bottom: solid 2px transparent;
+
+	font-style: italic;
+	font-weight: bold;
+}
+
+.titulo4::after {
+	position: relative;
+	display: block;
+	content: '';
+
+	width: 20%;
+	height: 4px;
+
+	background-image: linear-gradient(to right, #FFF, #ffffff, rgb(255, 255, 255));
+	border-radius: 10px;
+	
+	bottom: 2.5vh;
+	margin-left: 40%;
+}
+
+.titulo5 {
+	position: relative;
+	cursor: default;
+	overflow: hidden;
+
+	justify-content: center;
+	text-align: center;
+	margin-bottom: 40px;
+	margin-top: 40px;
+
+	background-image: linear-gradient(to right, black, red, black);
+	color: white;
+	box-shadow: 3px 3px 20px red;
+
+	border-bottom: solid 2px transparent;
+
+	font-style: italic;
+	font-weight: bold;
+}
+
+.titulo5::after {
+	position: relative;
+	display: block;
+	content: '';
+
+	width: 10%;
+	height: 4px;
+
+	background-image: linear-gradient(to right, #FFF, #ffffff, rgb(255, 255, 255));
+	border-radius: 10px;
+	
+	bottom: 2.5vh;
+	margin-left: 45%;
+}
+
+.fade-in {
+	opacity: 0;
+	transition: opacity 1.2s;
+}
+
+.fade-in-visible {
+	opacity: 1;
+}
+
+/*PRODUTO À ESQUERDA*/
+
+.produto1 {
+	position: relative;
+	display: flex;
+
+	cursor: default;
+
+	width: 100%;
+	height: 40vh;
+
+	background-color: #ffffff;
+
+	overflow: hidden;
+	align-items: center;
+	margin-bottom: 20px;
+
+	left: 2vh;
+}
+
+#img1 {
+	background-image: url(../assets/MCP/Modulo1.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/*PRODUTO A DIREITA*/
+
+.produto2 {
+	position: relative;
+	display: flex;
+
+	cursor: default;
+
+	width: 100%;
+	height: 40vh;
+
+	background-color: #FFF;
+
+	overflow: hidden;
+	align-items: center;
+	margin-bottom: 20px;
+
+	top: 2vh;
+	right: 2vh;
+}
+
+#img2 {
+	background-image: url(../assets/MCP/Módulo2.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/* Produto a Esquerda*/
+
+.produto3 {
+	position: relative;
+	display: flex;
+
+	cursor: default;
+
+	width: 100%;
+	height: 40vh;
+
+	background-color: #FFF;
+
+	overflow: hidden;
+	align-items: center;
+	margin-bottom: 20px;
+
+	top: 4vh;
+	left: 2vh;
+}
+
+#img3 {
+	background-image: url(../assets/MCP/Modulo3.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/*PRODUTO À ESQUERDA*/
+
+.produto4 {
+	position: relative;
+	display: flex;
+
+	cursor: default;
+
+	width: 100%;
+	height: 40vh;
+
+	background-color: #FFF;
+
+	overflow: hidden;
+	align-items: center;
+	margin-bottom: 20px;
+
+	top: 0vh;
+	left: 2vh;
+}
+
+#img4 {
+	background-image: url(../assets/MCP/Processador1.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/*PRODUTO A DIREITA*/
+
+.produto5 {
+	position: relative;
+	display: flex;
+
+	cursor: default;
+
+	width: 100%;
+	height: 40vh;
+
+	background-color: #FFF;
+
+	overflow: hidden;
+	align-items: center;
+	margin-bottom: 20px;
+
+	top: 2vh;
+	right: 2vh;
+}
+
+#img5 {
+	background-image: url(../assets/MCP/Processador2.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/* Produto a Esquerda*/
+
+.produto6 {
+	position: relative;
+	display: flex;
+
+	cursor: default;
+
+	width: 100%;
+	height: 40vh;
+
+	background-color: #FFF;
+
+	overflow: hidden;
+	align-items: center;
+	margin-bottom: 20px;
+
+	top: 4vh;
+	left: 2vh;
+}
+
+#img6 {
+	background-image: url(../assets/MCP/Processador3.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/*PRODUTO À ESQUERDA*/
+
+.produto7 {
+	position: relative;
+	display: flex;
+
+	cursor: default;
+
+	width: 100%;
+	height: 40vh;
+
+	background-color: #FFF;
+
+	overflow: hidden;
+	align-items: center;
+	margin-bottom: 20px;
+
+	top: 0vh;
+	left: 2vh;
+}
+
+#img7 {
+	background-image: url(../assets/MCP/AutoFalante\ DuasVias.png);
+	background-size: 60%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/*PRODUTO A DIREITA*/
+
+.produto8 {
+	position: relative;
+	display: flex;
+
+	cursor: default;
+
+	width: 100%;
+	height: 40vh;
+
+	background-color: #FFF;
+
+	overflow: hidden;
+	align-items: center;
+	margin-bottom: 20px;
+
+	top: 2vh;
+	right: 2vh;
+}
+
+#img8 {
+	background-image: url(../assets/MCP/AutoFalante6x9.png);
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/* Produto a Esquerda*/
+
+.produto9 {
+	position: relative;
+	display: flex;
+
+	cursor: default;
+
+	width: 100%;
+	height: 40vh;
+
+	background-color: #FFF;
+
+	overflow: hidden;
+	align-items: center;
+	margin-bottom: 20px;
+
+	top: 4vh;
+	left: 2vh;
+}
+
+#img9 {
+	background-image: url(../assets/MCP/AutoFalanteTriaxial.png);
+	background-size: 60%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/*PRODUTO À ESQUERDA*/
+
+.produto10 {
+	position: relative;
+	display: flex;
+
+	cursor: default;
+
+	width: 100%;
+	height: 40vh;
+
+	background-color: #FFF;
+
+	overflow: hidden;
+	align-items: center;
+	margin-bottom: 20px;
+
+	top: 0vh;
+	left: 2vh;
+}
+
+#img10 {
+	background-image: url(../assets/MCP/Subwoofers1.png);
+	background-size: 80%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/*PRODUTO A DIREITA*/
+
+.produto11 {
+	position: relative;
+	display: flex;
+
+	cursor: default;
+
+	width: 100%;
+	height: 40vh;
+
+	background-color: #FFF;
+
+	overflow: hidden;
+	align-items: center;
+	margin-bottom: 20px;
+
+	top: 2vh;
+	right: 2vh;
+}
+
+#img11 {
+	background-image: url(../assets/MCP/Subwoofers2.png);
+	background-size: 60%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/* Produto a Esquerda*/
+
+.produto12 {
+	position: relative;
+	display: flex;
+
+	cursor: default;
+
+	width: 100%;
+	height: 40vh;
+
+	background-color: #FFF;
+
+	overflow: hidden;
+	align-items: center;
+	margin-bottom: 20px;
+
+	top: 4vh;
+	left: 2vh;
+}
+
+#img12 {
+	background-image: url(../assets/MCP/Subwoofers3.png);
+	background-size: 65%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/*PRODUTO À ESQUERDA*/
+
+.produto13 {
+	position: relative;
+	display: flex;
+
+	cursor: default;
+
+	width: 100%;
+	height: 40vh;
+
+	background-color: #FFF;
+
+	overflow: hidden;
+	align-items: center;
+	margin-bottom: 20px;
+
+	top: 0vh;
+	left: 2vh;
+}
+
+#img13 {
+	background-image: url(../assets/MCP/radio1.png);
+	background-size: 40%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/*PRODUTO A DIREITA*/
+
+.produto14 {
+	position: relative;
+	display: flex;
+
+	cursor: default;
+
+	width: 100%;
+	height: 40vh;
+
+	background-color: #FFF;
+
+	overflow: hidden;
+	align-items: center;
+	margin-bottom: 20px;
+
+	top: 2vh;
+	right: 2vh;
+}
+
+#img14 {
+	background-image: url(../assets/MCP/radio2.png);
+	background-size: 60%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/* Produto a Esquerda*/
+
+.produto15 {
+	position: relative;
+	display: flex;
+
+	cursor: default;
+
+	width: 100%;
+	height: 40vh;
+
+	background-color: #FFF;
+
+	overflow: hidden;
+	align-items: center;
+	margin-bottom: 20px;
+
+	top: 4vh;
+	left: 2vh;
+}
+
+#img15 {
+	background-image: url(../assets/MCP/radio3.png);
+	background-size: 65%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#rodape {
+
+	position: relative;
+	bottom: 0;
+	background-color: black;
+	height: 21vh;
+	width: 100%;
+	color: white;
+	/* Adicionei uma cor de texto para maior visibilidade */
+}
+
+.rodape {
+	box-sizing: border-box;
+	font-size: 10px;
+	justify-content: space-between;
+	/* Isso alinha os elementos filhos à esquerda e à direita */
+	color: white;
+	display: flex;
+	align-items: center;
+}
+
+.contato {
+
+	width: 300px;
+	height: 100px;
+}
+
+.contato::before {
+	margin-right: 10px;
+	content: "";
+	position: absolute;
+	width: 2px;
+	/* Largura da borda esquerda */
+	height: 80%;
+	background: linear-gradient(to bottom, #000000, #302f2f, rgb(0, 0, 0));
+}
+
+p {
+	margin: 2px;
+	padding-left: 50px;
+}
+
+.rodape h1 {
+	margin: 2px;
+	padding-left: 50px;
+}
+
+.logorodape {
+	margin-left: 70px;
+	position: relative;
+	width: 120px;
+	height: 30px;
+	background-image: url(../assets/Logo.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#mapa {
+	margin: 20px;
+	position: relative;
+	display: flex;
+	box-sizing: content-box;
+	border: 2px solid red;
+}
+
+.mapa iframe {
+
+	width: 50vh;
+	height: 15vh;
+}
+
+.linha {
+	width: 10px;
+	height: 100%;
+	background-color: black;
+}
+
+.linha::before {
+	margin-top: 16px;
+	content: "";
+	position: absolute;
+	width: 2px;
+	/* Largura da borda esquerda */
+	height: 80%;
+	background: linear-gradient(to bottom, #000000, #302f2f, rgb(0, 0, 0));
+}
+
+
+.pagamento {
+	position: relative;
+	height: 135px;
+	width: 250px;
+
+
+}
+
+.pagamento img {
+	height: 135px;
+	width: 220px;
+	padding-left: 30px;
+}
+
+.pagamento::before {
+	margin-top: 18px;
+	content: "";
+	position: absolute;
+	width: 2px;
+	/* Largura da borda esquerda */
+	height: 80%;
+	background: linear-gradient(to bottom, #000000, #302f2f, rgb(0, 0, 0));
+}
+
+@media screen and (max-width: 900px) {
+	.img-desktop {
+		display: none;
+	}
+
+	.img-mobile {
+		display: inline;
+	}
+
+	.nav-auto,
+	.nav-manual {
+		margin-top: 60%;
+	}
+}
+
+/*importar coisas código para responsibilidade android*/

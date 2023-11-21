@@ -7,7 +7,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	width: 100%;
 	height: 100%;
-	overflow: hidden;
+
 
 }
 
@@ -105,7 +105,6 @@ nav ul li a:hover::after{
     background-color: white;
     width: 100%;
     height: 80vh;
-	overflow: hidden;
 }
 
 .circulo{
@@ -218,14 +217,11 @@ nav ul li a:hover::after{
 	position: relative;
 	display: flex;
 
-	border-radius: 3px;
-	border: solid red 3px;
 	font-size: 60px;
 	color: white;
 }
 
 #rodape{	
-
     position: relative;
     bottom: 0;
     background-color: black;
@@ -271,7 +267,9 @@ p{
 	position: relative;
 	width: 120px;
 	height: 30px;
-	background-image: url(/src/assets/Logo.png);
+	background-image: url(../assets/Logo.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
 #mapa{

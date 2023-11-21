@@ -97,7 +97,7 @@ nav ul li a:hover::after{
 	width: 100%;
 	background-color: white;
 }
-.ednaldo img{
+.decio img{
 	box-shadow: 3px 3px 20px;
 	border-right:solid rgb(255, 255, 255) 1px;
 	position: relative;
@@ -108,7 +108,7 @@ nav ul li a:hover::after{
 	transition: 0.5s;
 }
 
-.ednaldo img:hover{
+.decio img:hover{
 	transform: scale(1.1);
 }
 
@@ -196,7 +196,9 @@ nav ul li a:hover::after{
 	position: relative;
 	width: 120px;
 	height: 30px;
-	background-image: url(/src/assets/Logo.png);
+	background-image: url(../assets/Logo.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
 #mapa{

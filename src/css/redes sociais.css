@@ -107,13 +107,14 @@ nav ul li a:hover::after{
 	justify-content: center;
 
 	float: left; /* posiciona a div para começar da esquerda possibilitando compilar as divs uma ao lado da outra */
-	display: inline-flex;
+	display: block;
 	position: relative;
 	height: 100%;
 	width: 40%;
 	overflow: hidden;
 
 	background-color: black;
+	box-shadow: 3px 3px 20px black;
 	color: rgb(255, 255, 255);
 	font-size: 5vh;
 	
@@ -122,10 +123,15 @@ nav ul li a:hover::after{
 
 }
 
+.texto p{
+	font-size: 18px;
+	padding-left: 16vh;
+	padding-right: 19vh;
+}
 .texto h1{
+	padding-top: 25vh;
 	padding-left: 16vh;
 	padding-right: 16vh;
-	border: solid 3px red;
 }
 
 .redes{
@@ -161,7 +167,6 @@ nav ul li a:hover::after{
 /* slider */
 .slider{
 	
-	
 	padding: 0 !important;
 	overflow: hidden;
 	height: 50vh;
@@ -172,10 +177,12 @@ nav ul li a:hover::after{
 }
 
 .img-desktop{
+
 	border-radius: 20px;	
 }
 
 .slide-content{
+	
 	width: 400%; /* define o tamanho para caber as imagens, aumentar caso tenha mais imagens*/
 	display: flex;
 	
@@ -198,6 +205,7 @@ nav ul li a:hover::after{
 
 .slide-box img{
 	width: 90%;
+	
 }
 
 .nav-manual, .nav-auto{
@@ -307,7 +315,9 @@ p{
 	position: relative;
 	width: 120px;
 	height: 30px;
-	background-image: url(/src/assets/Logo.png);
+	background-image: url(../assets/Logo.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
 }
 
 #mapa{
