@@ -736,7 +736,7 @@ nav ul li a:hover::after {
 
 #img13 {
 	background-image: url(../assets/MCP/radio1.png);
-	background-size: 40%;
+	background-size: 70%;
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -764,7 +764,7 @@ nav ul li a:hover::after {
 
 #img14 {
 	background-image: url(../assets/MCP/radio2.png);
-	background-size: 60%;
+	background-size: 50%;
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -792,7 +792,7 @@ nav ul li a:hover::after {
 
 #img15 {
 	background-image: url(../assets/MCP/radio3.png);
-	background-size: 65%;
+	background-size: 70%;
 	background-repeat: no-repeat;
 	background-position: center;
 }
