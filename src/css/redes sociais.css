@@ -10,11 +10,6 @@ body {
 
 }
 
-#logo {
-	width: 155px;
-	height: 40px;
-}
-
 header {
 	position: fixed;
 	display: flex;
@@ -22,11 +17,9 @@ header {
 	justify-content: center; /* Centraliza horizontalmente */
 	align-items: center; /* Centraliza verticalmente */
 	gap: 10px; 
+	text-align: center;
 
-	background-image: url(../assets/header.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100%;
+	background-image: linear-gradient(to bottom, rgb(253, 74, 0), rgb(229, 48, 0));
 
 	padding: 10px;
 	box-sizing: border-box;
@@ -73,11 +66,11 @@ nav ul li a {
 	
 }
 
-nav ul li a::after{
+.txt a::after{
 	content: " ";
 	width: 0px;
 	height:4px;
-	background-color:red;
+	background-color:rgb(0, 0, 0);
 	position: absolute;
 	top: 20px;
 	left: 0;
@@ -86,10 +79,30 @@ nav ul li a::after{
 
 }
 
-nav ul li a:hover::after{
+.txt a:hover::after{
 
 	width: 30px;
 
+}
+
+.icones{
+	position: relative;
+	display: flex;
+	transform: translateX(20%);
+	justify-content: right;
+	text-align: right;
+	align-items: right;
+}
+.icon i{
+	margin-left: -50px;
+	margin-right: -50px;
+	font-size: 20px;
+}
+
+.icon a:hover{
+	transform: scale(1.2);
+	opacity: 0.6 ;
+	transition: 0.5s;
 }
 
 /* essa div esta apenas mostrando o fundo branco e dividindo navbar do rodape*/
@@ -280,44 +293,39 @@ nav ul li a:hover::after{
 }
 .rodape{
 	box-sizing: border-box;
-	font-size: 10px;
+	font-size: 11px;
 	justify-content: space-between; /* Isso alinha os elementos filhos à esquerda e à direita */
 	color: white;
 	display: flex;
     align-items: center;
 }
 
+
 .contato{
-	
-	width: 300px;
-	height: 100px;
-}
 
-.contato::before{
-	margin-right: 10px;
-	content: "";
-    position: absolute;
-    width: 2px; /* Largura da borda esquerda */
-    height: 80%;
-    background: linear-gradient(to bottom, #000000, #302f2f, rgb(0, 0, 0)); 
-}
-p{
-	margin: 2px;
-	padding-left: 50px;
-}
+	width: 28%;
+	height: 100%;
 
-.rodape h1{
-	margin: 2px;
-	padding-left: 50px;
+	justify-content: left;
+	align-items: left;
+	text-align: left;
 }
 .logorodape{
-	margin-left: 70px;
+	width: 15%;
+	height: 21vh;
+
 	position: relative;
-	width: 120px;
-	height: 30px;
-	background-image: url(../assets/Logo.png);
-	background-size: 100%;
-	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.logorodape img{
+	width:	16vh;
+	height: 4vh;
+
 }
 
 #mapa{
@@ -357,16 +365,7 @@ p{
 .pagamento img{
 	height: 135px;
 	width: 220px;
-	padding-left: 30px;
-}
-
-.pagamento::before{
-	margin-top: 18px;
-	content: "";
-    position: absolute;
-    width: 2px; /* Largura da borda esquerda */
-    height: 80%;
-    background: linear-gradient(to bottom, #000000, #302f2f, rgb(0, 0, 0)); 
+	
 }
 
 @media screen and (max-width: 900px) {
