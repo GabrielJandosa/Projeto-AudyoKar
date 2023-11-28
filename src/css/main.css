@@ -7,6 +7,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	width: 100%;
 	height: 100%;
+	overflow-x: hidden;
 
 }
 
@@ -105,6 +106,22 @@ nav ul li a {
 	transition: 0.5s;
 }
 
+/* aqui acaba a navbar*/
+
+
+.home1 img{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	margin: 0;
+	animation: scaleAnimation 1s ease-in-out;
+}
+
+
+
+
+/* aqui acima eh a foto da pagina principal*/
+
 .ladingpage{
 	position: relative;
 	display: flex;
@@ -143,8 +160,11 @@ a{
 	color: white;
 }
 
+		/*-------------- aqui acaba o sobre --------------------*/
+
 .qual{
 	margin: 60px;
+	
 	font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -238,6 +258,8 @@ section.slider{
 	
 }
 
+/* acima vem a animação de audio ------------------------*/
+
 .slide-content{
 	width: 400%; /* define o tamanho para caber as imagens, aumentar caso tenha mais imagens*/
 	height: auto;
@@ -322,17 +344,7 @@ section.slider{
 	
 }
 
-.home1 img{
-	width: 100%;
-	height: 100vh;
-	position: relative;
-	margin: 0;
-	z-index: -1;
-}
-
-#som{
-	margin-left: 10px;
-}
+/* acima acaba o slider e abaixo começa os produtos*/
 .home2{
 	overflow-x: hidden;
 	display: flex;
@@ -389,51 +401,40 @@ section.slider{
 	transform: translateX(30%)
 }
 
-	#falante:hover{
+	#produto1:hover{
 		transform: scale(1.01);
 		opacity: 0.9;
 	}
 
-	#redes:hover{
+	#produto2:hover{
 		transform: scale(1.01);
 		opacity: 0.9;
 	}
 
-	#servicos:hover{
+	#produto3:hover{
 		transform: scale(1.01);
 		opacity: 0.9;
 	}
 
-	#projetos:hover{
-		transform: scale(1.01);
-		opacity: 0.9;
-	}
-
-
-#falante{
-	background-image: url(/src/assets/falante.png);
+#produto1{
+	background-image: url(../assets/redes.png);
 	transition: transform 0.3s;
 	
 }
 
-#redes{
-	background-image: url(/src/assets/redes.png);
+#produto2{
+	background-image: url(../assets/projetos.png);
 	transition: transform 0.3s;
 
 }
 
-#servicos{
-	background-image: url(/src/assets/serviços.png);
+#produto3{
+	background-image: url(../assets/falante.png);
 	transition: transform 0.3s;
 
 }
 
-#projetos{
-	background-image: url(/src/assets/projetos.png);
-	transition: transform 0.3s;
-
-}
-
+/* aqui comça as redes sociais -------------*/
 .textoredes{
 	justify-content: center;
 	text-align: center;
@@ -479,6 +480,7 @@ margin-right: 4em;
 }
 
 .postnovo{
+	background-image: url(../assets/redes.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 50vh;
@@ -528,7 +530,7 @@ section.homezada{
 	background-color: black;
 }
 .home3{
-	background-image: url(/src/assets/PARCERIAS.png);
+	background-image: url(../assets/PARCERIAS.png);
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-position: center;
@@ -541,6 +543,118 @@ section.homezada{
 	transform: translatex(100%);
 	transition: transform 1s ease-in-out; /* Adicione uma transição para suavizar a animação */
 }
+
+/* agora começa os serviços ------------*/
+
+.fila1, .fila2{
+
+	display: inline-flex;
+	position: relative;
+
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+    width: 100%;
+	height: 50vh;
+	 
+}
+
+.circulo{
+	overflow-x: hidden;
+	overflow-y: hidden;
+	
+	margin: 20px;
+	width: 40vh;
+	height: 40vh;
+	
+	display: inline-flex;
+
+	border: solid red 2px;
+	border-radius: 40vh;
+}
+
+.circulo h1{
+
+	margin: 0;
+	position: relative;
+	display: flex;
+
+	height: 100%;
+	width: 100%;
+
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+
+	color: rgb(255, 255, 255);
+	font-size: 25px;
+	opacity: 0.8;
+		
+	background-color: black;
+
+	transform: translateX(0%);
+	transition: 0.5s;
+
+}
+
+.circulo:hover h1{
+	transform: translateX(-100%);
+}
+
+#som{
+	background-image: url(../serviços/som.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#alarme{
+	background-image: url(../serviços/alarme.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+
+#sufilme{
+	background-image: url(../serviços/insufilm.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#acessorios{
+	background-image: url(../serviços/acessorios.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#interior{
+	background-image: url(../serviços/tapecaria.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#iluminação{
+	background-image: url(../serviços/iluminacao.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.circulo:hover{
+	transition: 0.3s;
+	transform: scale(1.1);
+	opacity: 0.9;
+	box-shadow: 3px 3px 20px red;
+	
+}
+
+
+	/*transition: transform 1s ease-in-out;  Adicione uma transição para suavizar a animação */
 
 
 
@@ -631,6 +745,20 @@ section.homezada{
 	width: 220px;
 	
 }
+/* abaixo estão declaradas as animações em JS*/
+.dentro{
+  	transform: translatex(100%);
+  	transition: opacity 0.5s ease, transform 1s ease;
+}
+.fade-in {
+	opacity: 0;
+	transition: opacity 1.2s;
+}
+
+.fade-in-visible {
+	opacity: 1;
+}
+
 
 @media screen and (max-width: 900px) {
 	.img-desktop{
@@ -644,5 +772,20 @@ section.homezada{
 	.nav-auto, .nav-manual{
 			margin-top: 60%;
 	}
+	
 } 
+@keyframes scaleAnimation {
+	0% {
+	  transform: scale(1);
+	 
+	}
+	50% {
+	  transform: scale(1.02);
+	
+	}
+	100% {
+	  transform: scale(1);
+	  
+	}
+  }
 /*importar coisas código para responsibilidade android*/

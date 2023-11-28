@@ -19,15 +19,30 @@ function proximaImg(){
 }
 
 
-const home3 = document.querySelector('.home3');
+document.querySelectorAll('.dentro').forEach(home3 => {
+  window.addEventListener('scroll', () => {
+    const divTop = home3.getBoundingClientRect().top;
 
-window.addEventListener('scroll', () => {
-  const scrollX = window.scrollX;
-  const divTop = home3.getBoundingClientRect().top;
-
-  if (divTop < window.innerHeight) {
-    home3.style.transform = 'translateX(0)';
-  } else {
-    home3.style.transform = 'translateX (100%)';
-  }
+    home3.style.transform = divTop < window.innerHeight ? 'translateX(0)' : 'translateX(100%)';
+  });
 });
+
+const elements = document.querySelectorAll('.fade-in');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('fade-in-visible');
+      observer.unobserve(entry.target);
+    }
+  });
+});
+
+elements.forEach((element) => {
+  observer.observe(element);
+});
+
+
+
+
+
