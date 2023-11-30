@@ -480,8 +480,8 @@ margin-right: 4em;
 	text-align: center;
 }
 
-.postnovo{
-	background-image: url(../assets/redes.png);
+.postnovo1 {
+	background-image: url(../assets/Insta1.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 50vh;
@@ -493,6 +493,34 @@ margin-right: 4em;
 	align-items: center;
 	position: relative;
 }
+.postnovo2 {
+	background-image: url(../assets/Insta2.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 50vh;
+	height: 45vh;
+	margin: 15px 15px 15px 15px;
+	
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.postnovo3 {
+	background-image: url(../assets/Insta3.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 50vh;
+	height: 45vh;
+	margin: 15px 15px 15px 15px;
+	
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
 .tirapreta{
 	color: white;
 	background-color: black;

@@ -348,6 +348,8 @@ nav ul li a {
 	position: relative;
 	display: flex;
 
+	cursor: default;
+
 	width: 100%;
 	height: 40vh;
 
