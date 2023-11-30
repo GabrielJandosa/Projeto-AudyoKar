@@ -109,7 +109,7 @@ nav ul li a {
 .fundobranco{
 	width: 100%;
 	height: 10vh;
-	background-color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
 }
 .tamanho{
 
@@ -119,21 +119,34 @@ nav ul li a {
 
 	height: auto;
 	width: 100%;
-	background-color: rgb(148, 96, 96);
+	background-color: rgb(255, 255, 255);
 }
 
 .div2{
+
 	overflow-x: hidden;
 	position: relative;
 	display: inline-flex;
 
-	height: 100vh;
+	height: 90vh;
 	width: 100%;
-	background-color: rgb(255, 0, 0);
+	background-color: rgb(255, 255, 255);
 }
 
+.loja img{
+	border-right:solid rgb(255, 255, 255) 1px;
+	position: relative;
+	display: flex;
+	height: 600px;
+	width: 600px;
+	transition: 0.5s;
+	margin-left: 20px;
+}
+
+.loja img:hover{
+	transform: scale(1.04);
+}
 .decio img{
-	box-shadow: 3px 3px 20px;
 	border-right:solid rgb(255, 255, 255) 1px;
 	position: relative;
 	display: flex;
@@ -144,7 +157,7 @@ nav ul li a {
 }
 
 .decio img:hover{
-	transform: scale(1.1);
+	transform: scale(1.04);
 }
 
 .texto{
@@ -168,19 +181,33 @@ nav ul li a {
 	justify-content: center;
 	text-align: center;
 	color: #000000;
+
+	padding-left: 10vh;
+	padding-right: 10vh;
+	
+
+}
+.titulo{
+	width: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+
+	text-align: center;
+	align-items: center;
+	justify-content: center;
 }
 .orange{
 	border-bottom: orangered solid 2px;
 	border-radius: 2px;
 }
-
-.assinatura{
-	top: 54vh;
-	left: 122vh;
-	position: relative;
-	width: 200px;
-	height: 200px;
+h2{
+	border-bottom: orangered solid 2px;
+	border-radius: 2px;
+	margin-left: 10px;
+	margin-right: 100vh;
 }
+
 
 /* aqui comeca o rodape-----------------------------------*/
 #rodape{

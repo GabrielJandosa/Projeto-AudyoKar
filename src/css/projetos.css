@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Share+Tech+Mono&display=swap');
 
+i{
+	background: linear-gradient(to right, orangered 100%, rgb(0, 255, 42) 0%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
 
 body {
 	/* margin - imagine um relogio para as direcoes (top / right / bottom / left)*/
@@ -107,25 +113,32 @@ nav ul li a {
 }
 
 /* essa div esta apenas mostrando o fundo branco e dividindo navbar do rodape*/
-
+/* galeria CSS*/
 .gallery{
 	position: relative;
-	padding-top: 15vh;
+	padding-top: 10vh;
 	width: 100%;
-	height: 130vh;
-	
+	height: auto;
 	text-align: center;
 
 
+}
+
+.orange{
+	
+		padding-bottom: 20px;
+		border-bottom: 2px solid orangered;
+		margin-left: 4em;
+		margin-right: 4em;
+	
 }
 #fotoF1{
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
 	position: relative;
-	border-radius: 5px;
 	width: 100%;
-	height: 250px;
+	height: 100%;
 	transition: 0.5s;	
 
 }
@@ -134,7 +147,6 @@ nav ul li a {
 	justify-content: center;
 	align-items: center;
 	position: relative;
-	border-radius: 5px;
 	width: 100%;
 	height: 250px;
 	transition: 0.5s;
@@ -148,11 +160,9 @@ nav ul li a {
 	position: relative;
 	margin-top: 20vh;
 	margin: 5px;
-	border-radius: 5px;
 	width: 45vh;
 	height: 250px;
-	border: solid rgb(255, 0, 0) 2px;
-	box-shadow: 3px 3px 20px;
+	
 	transition: 0.5s;	
 }
 .fila1:hover{
@@ -165,16 +175,26 @@ nav ul li a {
 	justify-content: center;
 	align-items: center;
 	position: relative;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	border-radius: 5px;
-	width: 61.9vh;
+	margin-top: 20vh;
+	margin: 5px;
+	width: 45vh;
 	height: 250px;
-	border: solid rgb(255, 0, 0) 2px;
-	box-shadow: 3px 3px 20px;
+	
 	transition: 0.5s;
 }
 .fila2:hover{
+	transform: scale(1.1);
+	opacity: 0.8;
+}
+.fila3:hover{
+	transform: scale(1.1);
+	opacity: 0.8;
+}
+.fila4:hover{
+	transform: scale(1.1);
+	opacity: 0.8;
+}
+.fila5:hover{
 	transform: scale(1.1);
 	opacity: 0.8;
 }
@@ -190,6 +210,7 @@ nav ul li a {
 	background-image: url(../Projetos/capa\ 1.png);	
 	background-size: 100%;
 	background-repeat: no-repeat;
+	background-color: #F00;
 }
 
 #TR4:hover{
@@ -204,6 +225,7 @@ nav ul li a {
 	background-image: url(../Projetos/capa\ 2.png);	
 	background-size: 100%;
 	background-repeat: no-repeat;
+	background-color: #F00;
 }
 
 #X4:hover{
@@ -218,17 +240,43 @@ nav ul li a {
 	align-items: center;
 	position: relative;
 	margin: 5px;
-	border-radius: 5px;
 	width: 45vh;
 	height: 250px;
-	border: solid rgb(255, 0, 0) 2px;
-	box-shadow: 3px 3px 20px;
+	
 	transition: 0.5s;
 }
 .fila3:hover{
 	transform: scale(1.1);
 	opacity: 0.8;
 }
+
+.fila4
+{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	margin-top: 20vh;
+	margin: 5px;
+	width: 45vh;
+	height: 250px;
+	transition: 0.5s;
+}
+
+.fila5
+{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	margin-top: 20vh;
+	margin: 5px;
+	width: 45vh;
+	height: 250px;
+	transition: 0.5s;
+	margin-bottom: 5vh;
+}
+
 #logocentro{
 	display: inline-flex;
 	justify-content: center;
