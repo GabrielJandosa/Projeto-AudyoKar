@@ -117,21 +117,21 @@ nav ul li a {
 	position: relative;
 	display: inline-flex;
 
-	height: 100vh;
+	height: auto;
 	width: 100%;
-	background-color: rgb(255, 255, 255);
+	background-color: rgb(148, 96, 96);
 }
 
-.tamanho2{
-
+.div2{
 	overflow-x: hidden;
 	position: relative;
 	display: inline-flex;
 
 	height: 100vh;
 	width: 100%;
-	background-color: rgb(255, 255, 255);
+	background-color: rgb(255, 0, 0);
 }
+
 .decio img{
 	box-shadow: 3px 3px 20px;
 	border-right:solid rgb(255, 255, 255) 1px;
@@ -160,7 +160,7 @@ nav ul li a {
 }
 
 .texto2{
-	padding-top: 40px;
+
 	height: auto;
 	width: 100%;
 	display: inline-flex;
@@ -168,10 +168,6 @@ nav ul li a {
 	justify-content: center;
 	text-align: center;
 	color: #000000;
-
-	padding-left: 10vh;
-	padding-right: 10vh;
-	padding-top: 10vh;
 }
 .orange{
 	border-bottom: orangered solid 2px;
@@ -186,7 +182,7 @@ nav ul li a {
 	height: 200px;
 }
 
-/* aqui comeca o rodape*/
+/* aqui comeca o rodape-----------------------------------*/
 #rodape{
 
     position: relative;
