@@ -106,21 +106,41 @@ nav ul li a {
 }
 /* aqui comeca a pagina sobre*/
 
+.fundobranco{
+	width: 100%;
+	height: 10vh;
+	background-color: rgb(0, 0, 0);
+}
 .tamanho{
 
-	height: 544px;
+	overflow-x: hidden;
+	position: relative;
+	display: inline-flex;
+
+	height: 100vh;
 	width: 100%;
-	background-color: white;
+	background-color: rgb(255, 255, 255);
+}
+
+.tamanho2{
+
+	overflow-x: hidden;
+	position: relative;
+	display: inline-flex;
+
+	height: 100vh;
+	width: 100%;
+	background-color: rgb(255, 255, 255);
 }
 .decio img{
 	box-shadow: 3px 3px 20px;
 	border-right:solid rgb(255, 255, 255) 1px;
 	position: relative;
 	display: flex;
-	height: 500px;
-	width: 500px;
-	top: 100px;
+	height: 600px;
+	width: 600px;
 	transition: 0.5s;
+	margin-left: 20px;
 }
 
 .decio img:hover{
@@ -128,37 +148,40 @@ nav ul li a {
 }
 
 .texto{
-	height: 20vh;
-}
-.texto p{
+	width: 100%;
 	height: auto;
-	width: 100vh;
-	display: flex;
-	position: relative;
-	justify-content: right;
-	text-align: justify;
-	color: #000000;
-	bottom: 50vh;
-	left: 90vh;
 
+	padding-left: 10vh;
+	padding-right: 10vh;
 
-}
-.texto h1{
-	display: flex;
+	justify-content: center;
 	align-items: center;
-	position: relative;
-	justify-content: right;
-	text-align: right;
-	color: #000000;
-	bottom: 50vh;
-	right: 36vh;
+	text-align: center;
+}
 
+.texto2{
+	padding-top: 40px;
+	height: auto;
+	width: 100%;
+	display: inline-flex;
+	position: relative;
+	justify-content: center;
+	text-align: center;
+	color: #000000;
+
+	padding-left: 10vh;
+	padding-right: 10vh;
+	padding-top: 10vh;
+}
+.orange{
+	border-bottom: orangered solid 2px;
+	border-radius: 2px;
 }
 
 .assinatura{
 	top: 54vh;
 	left: 122vh;
-	position: absolute;
+	position: relative;
 	width: 200px;
 	height: 200px;
 }

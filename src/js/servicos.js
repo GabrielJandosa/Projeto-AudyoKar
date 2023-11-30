@@ -1,11 +1,14 @@
-const servicos = document.querySelector('.servicos');
+const elements = document.querySelectorAll('.fade-in');
 
-window.addEventListener('DOMContentLoaded', () => {
-  const servicosTop = servicos.getBoundingClientRect().top;
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('fade-in-visible');
+      observer.unobserve(entry.target);
+    }
+  });
+});
 
-  if (servicosTop < window.innerHeight) {
-    servicos.style.transform = 'translateX(0%)';
-  } else {
-    servicos.style.transform = 'translateX(100%)';
-  }
+elements.forEach((element) => {
+  observer.observe(element);
 });

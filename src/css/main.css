@@ -93,6 +93,7 @@ nav ul li a {
 	justify-content: right;
 	text-align: right;
 	align-items: right;
+	
 }
 .icon i{
 	margin-left: -50px;
@@ -146,6 +147,7 @@ nav ul li a {
 
 a{
 	text-decoration: none;
+	transition: 0.5s;
 }
 .lermais{
 	color: orangered;
@@ -355,7 +357,6 @@ section.slider{
 	height: 70vh;
 	margin-top: 100px;
 }
-
 .quadrado{
 
 	background-size: cover;
@@ -570,8 +571,9 @@ section.homezada{
 	
 	display: inline-flex;
 
-	border: solid red 2px;
+	border: solid orangered 2px;
 	border-radius: 40vh;
+	transition: 0.5s;
 }
 
 .circulo h1{
@@ -649,7 +651,7 @@ section.homezada{
 	transition: 0.3s;
 	transform: scale(1.1);
 	opacity: 0.9;
-	box-shadow: 3px 3px 20px red;
+	box-shadow: 3px 3px 20px;
 	
 }
 
@@ -664,7 +666,7 @@ section.homezada{
     position: relative;
     bottom: 0;
     background-color: black;
-    height: 21vh;
+    height: 25vh;
     width: 100%;
     color: white; /* Adicionei uma cor de texto para maior visibilidade */
 
@@ -759,6 +761,60 @@ section.homezada{
 	opacity: 1;
 }
 
+.linha2{
+	width: 10px;
+	height: 20%;
+	background-color:black;
+}
+.linha2::before{
+	margin-top: 5px;
+	content: "";
+    position: absolute;
+    width: 2px; /* Largura da borda esquerda */
+    height: 80%;
+    background: linear-gradient(to bottom, #000000, #302f2f, rgb(0, 0, 0)); 
+}
+
+.dev{
+	position: relative;
+	display: inline-flex;
+
+	width: 100%;
+	height: 10vh;
+
+	justify-content: center;
+	background-color: black;
+	color: white;
+
+	font-size: 8px;
+	overflow-x: hidden;
+	
+}
+.devs{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin-right: 10px;
+	opacity: 0.4;
+}
+
+.names{
+	
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	opacity: 0.4;
+
+}
+
+.size:hover{
+	opacity: 0.8;
+}
+.size{
+	color: white;
+	font-size: 10px;
+	text-decoration: none;
+}
 
 @media screen and (max-width: 900px) {
 	.img-desktop{
