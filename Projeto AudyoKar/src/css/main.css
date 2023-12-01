@@ -1,0 +1,940 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Share+Tech+Mono&display=swap');
+
+body {
+	/* margin - imagine um relogio para as direcoes (top / right / bottom / left)*/
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+
+}
+
+header {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; /* Centraliza horizontalmente */
+	align-items: center; /* Centraliza verticalmente */
+	gap: 10px; 
+	text-align: center;
+
+	background-image: linear-gradient(to bottom, rgb(253, 74, 0), rgb(229, 48, 0));
+
+	padding: 10px;
+	box-sizing: border-box;
+	border-bottom: solid #F00 1px;
+	width: 100%;
+	z-index: 2;
+}
+
+nav {
+	display:flex;
+	justify-content: center;
+}
+
+nav ul {
+	text-align: center;
+	background-color: rgb(255, 255, 255 .7);
+	margin: 0; /* Removendo margem padrão do ul */
+	height: 30px; /* Defina a altura desejada */
+	display: flex;
+	justify-content: center; /* Centraliza horizontalmente os itens da lista */
+	align-items: center; /* Centraliza verticalmente os itens da lista */
+}
+
+nav ul li {
+	display: inline-block;
+	height: 60px;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+	
+}
+
+
+nav ul li a {
+	text-align: center;
+	text-decoration: none; /* Remove o sublinhado dos links */
+	color: rgb(255, 255, 255);
+	margin-left: 20px;
+	margin-right: 20px;
+	display: inline;
+	position: relative;
+	font-size: 14px;
+	font-style: italic;
+	
+}
+
+.txt a::after{
+	content: " ";
+	width: 0px;
+	height:4px;
+	background-color:rgb(0, 0, 0);
+	position: absolute;
+	top: 20px;
+	left: 0;
+	transition: 0.5s;
+	border-radius: 10px;
+
+}
+
+.txt a:hover::after{
+
+	width: 30px;
+
+}
+
+.icones{
+	position: relative;
+	display: flex;
+	transform: translateX(20%);
+	justify-content: right;
+	text-align: right;
+	align-items: right;
+	
+}
+.icon i{
+	margin-left: -50px;
+	margin-right: -50px;
+	font-size: 20px;
+}
+
+.icon a:hover{
+	transform: scale(1.2);
+	opacity: 0.6 ;
+	transition: 0.5s;
+}
+
+/* aqui acaba a navbar*/
+
+
+.home1 img{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	margin: 0;
+	animation: scaleAnimation 1s ease-in-out;
+}
+
+
+
+
+/* aqui acima eh a foto da pagina principal*/
+
+.ladingpage{
+	position: relative;
+	display: flex;
+}
+
+.sobre{
+	display: flex;
+	height: auto;
+	width: 100%;
+}
+
+.decio img{
+	width: 600px;
+	height: 600px;
+	transition: 0.5s;
+}
+
+.decio img:hover{
+	opacity: 0.9;
+	transform: scale(1.01);
+	transition: 0.2s;
+}
+
+.titulo{
+	border-bottom: orangered 2px solid;
+}
+.texto{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	
+	padding-left: 2vh;
+	padding-right: 2vh;
+}
+
+a{
+	text-decoration: none;
+	transition: 0.5s;
+}
+.lermais{
+	color: orangered;
+	padding: 20px;
+	border: 2px solid orangered;
+	border-radius: 25px;
+	transition: 0.5s;
+}
+
+.lermais:hover{
+	background-color: black;
+	color: white;
+}
+
+		/*-------------- aqui acaba o sobre --------------------*/
+
+.qual{
+	margin: 60px;
+	
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.corpo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin: 0;  
+}
+.bar1, .bar5, .bar9 {
+    flex: 1;
+    background-color: #ff4500;
+    margin: 0 5px;
+    border-radius: 2px;
+    animation: audioAnimation1 0.3s infinite alternate;
+}
+.bar2, .bar6, .bar10{
+    flex: 1;
+    background-color: #ff4500;
+    margin: 0 5px;
+    border-radius: 2px;
+    animation: audioAnimation1 0.4s infinite alternate;
+}
+.bar3, .bar7, .bar11{
+    flex: 1;
+    background-color: #ff4500;
+    margin: 0 5px;
+    border-radius: 2px;
+    animation: audioAnimation1 0.5s infinite alternate;
+}
+.bar4, .bar8, .bar12{
+    flex: 1;
+    background-color: #ff4500;
+    margin: 0 5px;
+    border-radius: 2px;
+    animation: audioAnimation1 0.3s infinite alternate;
+}
+
+@keyframes audioAnimation1 {
+    0% {
+		background-color: orange;
+        height: 10px;
+    }
+
+	50%{
+		background-color: orangered;
+		height: 40px;
+	}
+
+    100% {
+		background-color: red;
+        height: 80px;
+    }
+}
+@keyframes audioAnimation2 {
+    0% {
+        height: 10px;
+    }
+    100% {
+        height: 80px;
+    }
+}
+@keyframes audioAnimation3 {
+    0% {
+        height: 10px;
+    }
+    100% {
+        height: 80px;
+    }
+}
+@keyframes audioAnimation4 {
+    0% {
+        height: 10px;
+    }
+    100% {
+        height: 80px;
+    }
+}
+.img-desktop{
+	border-radius: 20px;
+	box-shadow: 3px 3px 20px;
+}
+section.slider{
+	margin: 0;
+	width: 100%;
+	height: auto;
+	padding: 0 !important;
+	overflow: hidden;
+	margin-top: 30px;
+	
+}
+
+/* acima vem a animação de audio ------------------------*/
+
+.slide-content{
+	width: 400%; /* define o tamanho para caber as imagens, aumentar caso tenha mais imagens*/
+	height: auto;
+	display: flex;
+	
+	
+}
+
+.slide-content input, .img-mobile{
+	display: none;
+}
+
+.slide-box{
+
+	width: 25%;
+	height: 45vh;
+	position: relative;
+	text-align: center;
+	transition: 1s;
+}
+
+.slide-box img{
+	width: 60%;
+}
+
+.nav-manual, .nav-auto{
+	position: absolute;
+	width: 100%;
+	margin-top: 21%;
+	display: flex;
+	justify-content: center;
+}
+
+.nav-manual .manual-btn, .nav-auto div{
+	border: 1px solid red;
+	padding: 10px;
+	border-radius: 50%;
+	cursor:pointer;
+	transition: 0.2s;
+	
+}
+
+.nav-manual .manual-btn:not(:last-child),.nav-auto div:not(:last-child){
+
+	margin-right: 10px;
+}
+
+.nav-manual .manual-btn:hover{
+	background-color: red;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1{
+
+	background-color: red;
+}
+
+#radio2:checked ~ .nav-auto .auto-btn2{
+
+	background-color: red;
+}
+
+#radio3:checked ~ .nav-auto .auto-btn3{
+
+	background-color: red;
+}
+
+#radio1:checked ~ .primeiro{
+
+	margin-left: 0%;
+
+}
+
+#radio2:checked ~ .primeiro{
+
+	margin-left: -25%;
+	
+}
+
+#radio3:checked ~ .primeiro{
+
+	margin-left: -50%;
+	
+}
+
+/* acima acaba o slider e abaixo começa os produtos*/
+.home2{
+	overflow-x: hidden;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: white;
+	width: 100%;
+	height: 70vh;
+	margin-top: 100px;
+}
+.quadrado{
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 60vh;
+	height: 60vh;
+	margin: 15px 15px 15px 15px;
+	
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+
+	}
+
+	.tiravermelha{
+		color: white;
+		background-color: black;
+
+		width: 60vh;
+		height: 15%;
+		margin-top: 60%;
+		opacity: 0.9;
+
+		position: relative;
+		font-size: 10px;
+		justify-content: left;
+		text-align: left;
+		display: flex;
+		flex-direction: column;
+	}
+
+.seta{
+	color: rgb(155, 155, 155);
+	transition: 0.5s;
+	padding-right: 10vh;
+	padding-left: 6vh;
+	transform: translateX(none)
+}
+
+.seta:hover{
+	color: orangered;
+	transform: translateX(30%)
+}
+
+	#produto1:hover{
+		transform: scale(1.01);
+		opacity: 0.9;
+	}
+
+	#produto2:hover{
+		transform: scale(1.01);
+		opacity: 0.9;
+	}
+
+	#produto3:hover{
+		transform: scale(1.01);
+		opacity: 0.9;
+	}
+
+#produto1{
+	background-image: url(../assets/redes.png);
+	transition: transform 0.3s;
+	
+}
+
+#produto2{
+	background-image: url(../assets/projetos.png);
+	transition: transform 0.3s;
+
+}
+
+#produto3{
+	background-image: url(../assets/falante.png);
+	transition: transform 0.3s;
+
+}
+
+/* aqui comça as redes sociais -------------*/
+
+/* Slider teste */
+.swiper-button-next, .swiper-button-prev, .swiper-pagination{
+	background: linear-gradient(to right, orangered 100%, rgb(0, 255, 42) 0%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+main {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+
+  .carrossel {
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden; /* Impede o scroll dentro do carrossel */
+	height: 300px; /* Ajuste a altura conforme necessário */
+  }
+
+  .swiper {
+	width: 100%; /* Adiciona largura total ao carrossel */
+  }
+
+  .swiper-slide {
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+
+  .project-img {
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+  }
+
+  .img {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+	height: auto; /* Permite que a altura se ajuste automaticamente à largura */
+  }
+.textoredes{
+	justify-content: center;
+	text-align: center;
+	border-bottom: 2px solid orangered;
+	margin-left: 4em;
+	margin-right: 4em;
+}
+
+.redes{
+	position: relative;
+	display: flex;
+	overflow: hidden;
+	
+	width: 100%;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.comment{
+	width: 100%;
+	height: 50%;
+}
+.comment img{
+	width: 100%;
+	height: 100%;
+}
+
+.news{
+justify-content: center;
+text-align: center;
+border-bottom: 2px solid orangered;
+margin-left: 4em;
+margin-right: 4em;
+}
+.news2{
+	position: relative;
+	display: flex;
+
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.postnovo1 {
+	background-image: url(../assets/Insta1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 50vh;
+	height: 45vh;
+	margin: 15px 15px 15px 15px;
+	
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.postnovo2 {
+	background-image: url(../assets/Insta2.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 50vh;
+	height: 45vh;
+	margin: 15px 15px 15px 15px;
+	
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.postnovo3 {
+	background-image: url(../assets/Insta3.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 50vh;
+	height: 45vh;
+	margin: 15px 15px 15px 15px;
+	
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.tirapreta{
+	color: white;
+	background-color: black;
+
+	width: 50vh;
+	height: 15%;
+	margin-top: 60%;
+	opacity: 0.9;
+
+	position: relative;
+	font-size: 10px;
+	justify-content: left;
+	text-align: left;
+	display: flex;
+	flex-direction: column;}
+
+.botao{
+	
+	height: auto;
+	width: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.lermais{
+	width: auto;
+	height: auto;
+}
+section.homezada{
+	overflow: hidden;
+	background-color: black;
+}
+.home3{
+	background-image: url(../assets/PARCERIAS.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+
+	width: 100%;
+	height: 80vh;
+
+	overflow: hidden;
+	position: relative;
+	transform: translatex(100%);
+	transition: transform 1s ease-in-out; /* Adicione uma transição para suavizar a animação */
+}
+
+/* agora começa os serviços ------------*/
+
+.fila1, .fila2{
+
+	display: inline-flex;
+	position: relative;
+
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+    width: 100%;
+	height: 50vh;
+	 
+}
+
+.circulo{
+	overflow-x: hidden;
+	overflow-y: hidden;
+	
+	margin: 20px;
+	width: 40vh;
+	height: 40vh;
+	
+	display: inline-flex;
+
+	border: solid orangered 2px;
+	border-radius: 40vh;
+	transition: 0.5s;
+}
+
+.circulo h1{
+
+	margin: 0;
+	position: relative;
+	display: flex;
+
+	height: 100%;
+	width: 100%;
+
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+
+	color: rgb(255, 255, 255);
+	font-size: 25px;
+	opacity: 0.8;
+		
+	background-color: black;
+
+	transform: translateX(0%);
+	transition: 0.5s;
+
+}
+
+.circulo:hover h1{
+	transform: translateX(-100%);
+}
+
+#som{
+	background-image: url(../serviços/som.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#alarme{
+	background-image: url(../serviços/alarme.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+
+#sufilme{
+	background-image: url(../serviços/insufilm.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#acessorios{
+	background-image: url(../serviços/acessorios.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#interior{
+	background-image: url(../serviços/tapecaria.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#iluminação{
+	background-image: url(../serviços/iluminacao.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.circulo:hover{
+	transition: 0.3s;
+	transform: scale(1.1);
+	opacity: 0.9;
+	box-shadow: 3px 3px 20px;
+	
+}
+
+/* a partida daqui o codigo eh do rodape*/
+#rodape{
+
+    position: relative;
+    bottom: 0;
+    background-color: black;
+    height: 25vh;
+    width: 100%;
+    color: white; /* Adicionei uma cor de texto para maior visibilidade */
+
+}
+.rodape{
+	box-sizing: border-box;
+	font-size: 11px;
+	justify-content: space-between; /* Isso alinha os elementos filhos à esquerda e à direita */
+	color: white;
+	display: flex;
+    align-items: center;
+}
+
+
+.contato{
+
+	width: 28%;
+	height: 100%;
+
+	justify-content: left;
+	align-items: left;
+	text-align: left;
+}
+.logorodape{
+	width: 15%;
+	height: 21vh;
+
+	position: relative;
+	display: flex;
+	flex-direction: column;
+
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.logorodape img{
+	width:	16vh;
+	height: 4vh;
+
+}
+
+#mapa{
+	margin: 20px;
+	position: relative;
+    display: flex; 
+	box-sizing: content-box;
+	border: 2px solid red;
+}
+.mapa iframe{
+	
+	width: 50vh;
+	height: 15vh;
+}
+.linha{
+	width: 10px;
+	height: 100%;
+	background-color:black;
+}
+.linha::before{
+	margin-top: 16px;
+	content: "";
+    position: absolute;
+    width: 2px; /* Largura da borda esquerda */
+    height: 80%;
+    background: linear-gradient(to bottom, #000000, #302f2f, rgb(0, 0, 0)); 
+}
+
+
+.pagamento{
+	position: relative;
+	height: 135px;
+	width: 250px;
+	
+
+}
+.pagamento img{
+	height: 135px;
+	width: 220px;
+	
+}
+/* abaixo estão declaradas as animações em JS*/
+.dentro{
+  	transform: translatex(100%);
+  	transition: opacity 0.5s ease, transform 1s ease;
+}
+.fade-in {
+	opacity: 0;
+	transition: opacity 1.2s;
+}
+
+.fade-in-visible {
+	opacity: 1;
+}
+
+.linha2{
+	width: 10px;
+	height: 20%;
+	background-color:black;
+}
+.linha2::before{
+	margin-top: 5px;
+	content: "";
+    position: absolute;
+    width: 2px; /* Largura da borda esquerda */
+    height: 80%;
+    background: linear-gradient(to bottom, #000000, #302f2f, rgb(0, 0, 0)); 
+}
+
+.dev{
+	position: relative;
+	display: inline-flex;
+
+	width: 100%;
+	height: 10vh;
+
+	justify-content: center;
+	background-color: black;
+	color: white;
+
+	font-size: 8px;
+	overflow-x: hidden;
+	
+}
+.devs{
+	justify-content: center;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin-right: 10px;
+	opacity: 0.4;
+}
+
+.names{
+	
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	opacity: 0.4;
+	justify-content: center;
+}
+
+.size:hover{
+	opacity: 0.8;
+}
+.size{
+	color: white;
+	font-size: 10px;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+	.img-desktop{
+			display: none;
+	}
+
+	.img-mobile{
+			display:inline;
+	}
+
+	.nav-auto, .nav-manual{
+			margin-top: 60%;
+	}
+	
+} 
+@keyframes scaleAnimation {
+	0% {
+	  transform: scale(1);
+	 
+	}
+	50% {
+	  transform: scale(1.02);
+	
+	}
+	100% {
+	  transform: scale(1);
+	  
+	}
+  }
+/*importar coisas código para responsibilidade android*/
